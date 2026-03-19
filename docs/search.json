@@ -1,5 +1,68 @@
 [
   {
+    "objectID": "teaching/index.html",
+    "href": "teaching/index.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Introduction to Python for Data Science \n                \n            \n            \n                OIDD (4/7)770 | \n                The Wharton School, University of Pennsylvania\n                \n                | Head TA\n                \n            \n            Introduce the data science workflow in Python via pandas. Responsibilities: technical assistance, quiz creation, office hours, grading, TA management\n\n            \n                \n                 \n                 Spring 2025, 2026 · Philadelphia, Pennsylvania\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Causal Thinking \n                \n            \n            \n                MATH-352 | \n                École polytechnique fédérale de Lausanne\n                \n                | Teaching Assistant\n                \n            \n            Introduce causal inference and develop causal intuitions for non-statisticians. Responsibilities: creation (from scratch) of problem sets and data exercises.\n\n            \n                \n                 \n                 Autumn 2022 · Lausanne, Switzerland\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Imperial Mathematics Year 1 \n                \n            \n            \n                First Year Mathematics | \n                Imperial College London\n                \n                | Peer Tutor\n                \n            \n            Provide academic and pastoral support to first year undergraduates in mathematics.  Responsiblities: hold two weekly classes with ~6 students reviewing that week's material.\n\n            \n                \n                 \n                 AY 2022-2023 · London, United Kingdom\n                \n                \n            \n        \n    \n    \n\nNo matching items"
+  },
+  {
+    "objectID": "teaching/index.html#supportive-roles",
+    "href": "teaching/index.html#supportive-roles",
+    "title": "Teaching",
+    "section": "",
+    "text": "Introduction to Python for Data Science \n                \n            \n            \n                OIDD (4/7)770 | \n                The Wharton School, University of Pennsylvania\n                \n                | Head TA\n                \n            \n            Introduce the data science workflow in Python via pandas. Responsibilities: technical assistance, quiz creation, office hours, grading, TA management\n\n            \n                \n                 \n                 Spring 2025, 2026 · Philadelphia, Pennsylvania\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Causal Thinking \n                \n            \n            \n                MATH-352 | \n                École polytechnique fédérale de Lausanne\n                \n                | Teaching Assistant\n                \n            \n            Introduce causal inference and develop causal intuitions for non-statisticians. Responsibilities: creation (from scratch) of problem sets and data exercises.\n\n            \n                \n                 \n                 Autumn 2022 · Lausanne, Switzerland\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Imperial Mathematics Year 1 \n                \n            \n            \n                First Year Mathematics | \n                Imperial College London\n                \n                | Peer Tutor\n                \n            \n            Provide academic and pastoral support to first year undergraduates in mathematics.  Responsiblities: hold two weekly classes with ~6 students reviewing that week's material.\n\n            \n                \n                 \n                 AY 2022-2023 · London, United Kingdom\n                \n                \n            \n        \n    \n    \n\nNo matching items"
+  },
+  {
+    "objectID": "research/projects/elizabeth-line-air-quality/index.html",
+    "href": "research/projects/elizabeth-line-air-quality/index.html",
+    "title": "Did the Elizabeth Line Improve Air Quality in London?",
+    "section": "",
+    "text": "Abstract\nAssessing the causal effects of major engineering interventions is difficult because implementation is nonrandom, spillovers are unavoidable, and suitable controls are often unavailable. We develop a temporal regression discontinuity (TRD) design for time-series settings in which treatment begins at a known date and may induce effects that evolve gradually. Within a potential-outcomes framework, we define short-run and finite-horizon effects, and introduce an approach for long-run effect estimation based on the derivative of the estimated effect curve. To accomplish this, we make use of Gaussian process regression and show how it offers advantages over similar methods in the literature. We apply the method to hourly air-pollution data from 77 London monitoring sites to study the opening of the Elizabeth Line on 24 May 2022. Immediate effects on nitrogen dioxide are modest, with citywide reductions of 3.51% at background sites and 2.59% at roadside sites one week after opening. Longer-run effects are larger, averaging 8.51% and 12.45% reductions, respectively, though spatial heterogeneity remains substantial. The results suggest that transport investments can yield gradual, uneven environmental benefits that are missed by discontinuity designs focused only on immediate effects."
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "I study causal theory and methodology as inspired by applied questions in social science. I am interested in formalising (often hitherto unformalised) causal models and identification strategies for social scientific questions which permit us to be credible about quantitative inferences of the human experience, which is why partial identification is an important motif of my work."
+  },
+  {
+    "objectID": "research/index.html#current-projects",
+    "href": "research/index.html#current-projects",
+    "title": "Research",
+    "section": "Current projects",
+    "text": "Current projects\n\n\n\n    \n        \n            \n                Kai R. D. Cooper, Guilherme Duarte, Luke Keele, Dean Knox, and Jonathan Mummolo. In preparation. \"Learning From Imperfect Identification Strategies: Automating Causal Inference When Assumptions Fail.\"\n            \n\n            \n            \n                \n                    \n                            causal inference\n                        \n                    \n                    \n                            methods\n                        \n                    \n                    \n                            partial identification\n                        \n                    \n                    \n                            software\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \"Perhaps most importantly, this approach allows for question-driven research\"\n            \n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                \n            \n        \n        \n        \n            \n                Kai R. D. Cooper, Liang Ma, and Daniel J. Graham. \"Quantifying the causal effects of major engineering interventions using a temporal regression discontinuity design: Air quality impacts of the Elizabeth Line in London\".  Submitted to the Annals of Applied Statistics. (2025).\n            \n\n            \n            \n                \n                    \n                            causal inference\n                        \n                    \n                    \n                            policy evaluation\n                        \n                    \n                    \n                            environment\n                        \n                    \n                    \n                            regression discontinuity\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \"[W]e introduce a new long-term effect estimand aimed at quantifying equilibrium effects...\"\n            \n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                \n            \n        \n        \n        \n            \n                Kai R. D. Cooper, Gregory Lanzalotto, Haosen Ge, Jacob Kaplan, Scott Desposato, Dean Knox, and Jonathan Mummolo. In preparation. \"A Principled Approach to Benchmarking in Studies of Racial Discrimination in Traffic Enforcement.\"\n            \n\n            \n            \n                \n                    \n                            causal inference\n                        \n                    \n                    \n                            fairness\n                        \n                    \n                    \n                            policing\n                        \n                    \n                    \n                            measurement\n                        \n                    \n                    \n                            proxies\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \"... the instability of benchmarking results stems from the absence of a causal foundation\"\n            \n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             Poster\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n\n\nNo matching items"
+  },
+  {
+    "objectID": "news/2026/01/18/isaac-newton-institute/index.html",
+    "href": "news/2026/01/18/isaac-newton-institute/index.html",
+    "title": "Isaac Newton Institute poster presentation",
+    "section": "",
+    "text": "I presented a poster at the Foundations of Causal Inference Workshop at the Isaac Newton Institute in Cambridge, United Kingdom, on “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies.”"
+  },
+  {
+    "objectID": "news/2025/10/17/nyu-2025/index.html",
+    "href": "news/2025/10/17/nyu-2025/index.html",
+    "title": "Data Science Frontiers workshop announcement",
+    "section": "",
+    "text": "Dean Knox and I will deliver a talk and workshop on applications of the new autobounds software at the Data Science Frontiers (Society and Politics) conference in New York."
+  },
+  {
+    "objectID": "news/2025/04/11/acic-2025/index.html",
+    "href": "news/2025/04/11/acic-2025/index.html",
+    "title": "ACIC 2025 poster accepted",
+    "section": "",
+    "text": "My poster, “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies,” has been accepted for presentation at ACIC 2025 in Detroit."
+  },
+  {
+    "objectID": "intuition/index.html",
+    "href": "intuition/index.html",
+    "title": "Intuition",
+    "section": "",
+    "text": "Much of my understanding of causal identification comes from a dedicated effort to momentarily dispense with the mathematics and write a story (with pictures!) which does the same job as the maths. Here, I will post stories I’ve written based on concepts useful for and created from my own research as I find it useful to access a deeper understanding of my work.\n\n\n    \n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Bio",
@@ -21,6 +84,62 @@
     "text": "Jan 18, 2026\n        \n        \n            Isaac Newton Institute poster presentation\n\n            \n            \n                \n                \n                    talks\n                \n                \n                \n                    policing\n                \n                \n                \n                    workshops\n                \n                \n            \n            \n\n            Poster. Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies at the Foundations of Causal Inference Workshop, Isaac Newton Institute.\n            \n            \n        \n        \n    \n    \n    \n                  \n            Nov 17, 2025\n        \n        \n            University of Washington Causal Reading Group talk\n\n            \n            \n                \n                \n                    talks\n                \n                \n                \n                    policing\n                \n                \n            \n            \n\n            Talk. Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies at the University of Washington Causal Reading Group.\n            \n            \n        \n        \n    \n    \n    \n                  \n            Oct 17, 2025\n        \n        \n            Data Science Frontiers workshop announcement\n\n            \n            \n                \n                \n                    workshops\n                \n                \n                \n                    software\n                \n                \n            \n            \n\n            Workshop. Dean Knox and I will deliver a talk and workshop on applications of the autobounds software at Data Science Frontiers (Society and Politics) in New York.\n            \n            \n        \n        \n    \n    \n    \n                  \n            Apr 18, 2025\n        \n        \n            IC2S2 2025 parallel talk accepted\n\n            \n            \n                \n                \n                    talks\n                \n                \n                \n                    policing\n                \n                \n            \n            \n\n            Parallel Talk. Using causal inference to unmask racial discrimination in traffic enforcement via proxies has been accepted for IC2S2 2025 in Norrkoping, Sweden.\n            \n            \n        \n        \n    \n    \n    \n                  \n            Apr 11, 2025\n        \n        \n            ACIC 2025 poster accepted\n\n            \n            \n                \n                \n                    talks\n                \n                \n                \n                    policing\n                \n                \n            \n            \n\n            Poster Presentation. Using causal inference to unmask racial discrimination in traffic enforcement via proxies has been accepted for ACIC 2025 in Detroit.\n            \n            \n        \n        \n    \n    \n    \n                  \n            Apr 2, 2025\n        \n        \n            JSM 2025 talk accepted\n\n            \n            \n                \n                \n                    talks\n                \n                \n                \n                    methods\n                \n                \n            \n            \n\n            Parallel Talk. Quantifying causal effects via temporal regression discontinuity designs with time-varying effects has been accepted for a 15-minute presentation at Joint Statistical Meetings 2025 in Nashville.\n            \n            \n        \n        \n    \n    \n\nNo matching items\n\nAll news"
   },
   {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Curriculum vitæ",
+    "section": "",
+    "text": "Download current CV"
+  },
+  {
+    "objectID": "intuition/2026/03/17/welcome/index.html",
+    "href": "intuition/2026/03/17/welcome/index.html",
+    "title": "Welcome to Intuition",
+    "section": "",
+    "text": "This is a placeholder post. Replace it with your own writing, duplicate the folder structure for new posts, or delete it once you have real content in place."
+  },
+  {
+    "objectID": "news/2025/04/02/jsm-2025/index.html",
+    "href": "news/2025/04/02/jsm-2025/index.html",
+    "title": "JSM 2025 talk accepted",
+    "section": "",
+    "text": "My contributed submission, “Quantifying Causal Effects via Temporal Regression Discontinuity Designs with Time-Varying Effects,” has been accepted for a 15-minute presentation at the Joint Statistical Meetings 2025 in Nashville, Tennessee."
+  },
+  {
+    "objectID": "news/2025/04/18/ic2s2-2025/index.html",
+    "href": "news/2025/04/18/ic2s2-2025/index.html",
+    "title": "IC2S2 2025 parallel talk accepted",
+    "section": "",
+    "text": "My work, “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies,” has been accepted for a parallel talk at the International Computational Social Science Conference (IC2S2) 2025 in Norrkoping, Sweden."
+  },
+  {
+    "objectID": "news/2025/11/17/uw-causal-reading-group/index.html",
+    "href": "news/2025/11/17/uw-causal-reading-group/index.html",
+    "title": "University of Washington Causal Reading Group talk",
+    "section": "",
+    "text": "I gave a talk at the University of Washington Causal Reading Group on “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies.” The event was held over Zoom."
+  },
+  {
+    "objectID": "news/index.html",
+    "href": "news/index.html",
+    "title": "News",
+    "section": "",
+    "text": "Recent updates, talks, presentations, and workshop announcements.\n\n\n    \n\nNo matching items"
+  },
+  {
+    "objectID": "research/projects/autobounds-imperfect-identification/index.html",
+    "href": "research/projects/autobounds-imperfect-identification/index.html",
+    "title": "Learning From Imperfect Identification Strategies",
+    "section": "",
+    "text": "Abstract\nSocial science has developed an expansive design-based toolkit for causal inference, but the assumptions that undergird standard approaches often fail in applied settings. Recent developments in automated partial identification offer an alternative approach that allows researchers to learn as much as possible in these imperfect settings by easily bounding unidentified quantities of interest while transparently acknowledging limitations of data and design. In this paper, we develop a number of new techniques within this framework, including new approaches for uncertainty quantification, covariate adjustment, extensions to continuous variables, and approaches for interpreting why bounds are narrow or wide. We then replicate and extend published studies covering a range of causal research designs to demonstrate how this approach provides a deeper understanding of the robustness of empirical results, even allowing key assumptions to be falsified in some cases. Finally, we use this approach to update findings in the literature on racial bias in policing, demonstrating the substantive contributions that are possible with this new technology."
+  },
+  {
+    "objectID": "research/projects/traffic-enforcement-proxies/index.html",
+    "href": "research/projects/traffic-enforcement-proxies/index.html",
+    "title": "A Principled Approach to Benchmarking in Studies of Racial Discrimination",
+    "section": "",
+    "text": "Abstract\nRacial bias in policing is well documented. Traffic stops represent the most common type of encounter in which civilians interact with police, which makes this an important setting for investigation of police behavior. Evidence-based debates in this area frequently rely on case-specific benchmarks to evaluate the racial distribution of police stops. Often, benchmarks such as per-capita demographics or not-at-fault drivers in vehicle collisions are used. However, these measures only approximate the intended comparison because they fail to (i) precisely define the causal contrast, (ii) accurately describe the nature of drivers visible to officers, (iii) explain disparities due to potentially biased selection decisions by officers. In this work we formally define racial bias as a violation of an individual fairness criterion: officer decision-making should be ignorant of race conditional on the behavior of the civilian, i.e. whether or not they are driving dangerously. This latter, however, is unmeasurable. To address this issue, we build on the growing proximal causal inference literature to make use of cameras, crashes and checkpoints as negative outcome controls for identification, under certain assumptions which may be probed via a sensitivity analysis. We will extend the method’s viability to a host of imperfect data settings which plague policing, e.g. when race is mismeasured or unavailable. We finish with applications of the approach to a variety of U.S. police jurisdictions."
+  },
+  {
     "objectID": "talks/index.html",
     "href": "talks/index.html",
     "title": "Talks",
@@ -40,124 +159,5 @@
     "title": "Talks",
     "section": "Workshops",
     "text": "Workshops\n\n\n\n    \n    \n                  \n            17 October, 2025\n        \n        \n            Learning From Imperfect Research Designs: Automating Causal Inference When Classic Assumptions Fail\n            Demonstration of autobounds software with methodological talk and interactive coding demonstration at Data Science Frontiers (Society and Politics) Conference at NYU | New York, New York\n\n            \n            \n        \n    \n    \n\nNo matching items"
-  },
-  {
-    "objectID": "research/projects/traffic-enforcement-proxies/index.html",
-    "href": "research/projects/traffic-enforcement-proxies/index.html",
-    "title": "A Principled Approach to Benchmarking in Studies of Racial Discrimination",
-    "section": "",
-    "text": "Abstract\nRacial bias in policing is well documented. Traffic stops represent the most common type of encounter in which civilians interact with police, which makes this an important setting for investigation of police behavior. Evidence-based debates in this area frequently rely on case-specific benchmarks to evaluate the racial distribution of police stops. Often, benchmarks such as per-capita demographics or not-at-fault drivers in vehicle collisions are used. However, these measures only approximate the intended comparison because they fail to (i) precisely define the causal contrast, (ii) accurately describe the nature of drivers visible to officers, (iii) explain disparities due to potentially biased selection decisions by officers. In this work we formally define racial bias as a violation of an individual fairness criterion: officer decision-making should be ignorant of race conditional on the behavior of the civilian, i.e. whether or not they are driving dangerously. This latter, however, is unmeasurable. To address this issue, we build on the growing proximal causal inference literature to make use of cameras, crashes and checkpoints as negative outcome controls for identification, under certain assumptions which may be probed via a sensitivity analysis. We will extend the method’s viability to a host of imperfect data settings which plague policing, e.g. when race is mismeasured or unavailable. We finish with applications of the approach to a variety of U.S. police jurisdictions."
-  },
-  {
-    "objectID": "research/projects/autobounds-imperfect-identification/index.html",
-    "href": "research/projects/autobounds-imperfect-identification/index.html",
-    "title": "Learning From Imperfect Identification Strategies",
-    "section": "",
-    "text": "Abstract\nSocial science has developed an expansive design-based toolkit for causal inference, but the assumptions that undergird standard approaches often fail in applied settings. Recent developments in automated partial identification offer an alternative approach that allows researchers to learn as much as possible in these imperfect settings by easily bounding unidentified quantities of interest while transparently acknowledging limitations of data and design. In this paper, we develop a number of new techniques within this framework, including new approaches for uncertainty quantification, covariate adjustment, extensions to continuous variables, and approaches for interpreting why bounds are narrow or wide. We then replicate and extend published studies covering a range of causal research designs to demonstrate how this approach provides a deeper understanding of the robustness of empirical results, even allowing key assumptions to be falsified in some cases. Finally, we use this approach to update findings in the literature on racial bias in policing, demonstrating the substantive contributions that are possible with this new technology."
-  },
-  {
-    "objectID": "news/index.html",
-    "href": "news/index.html",
-    "title": "News",
-    "section": "",
-    "text": "Recent updates, talks, presentations, and workshop announcements.\n\n\n    \n\nNo matching items"
-  },
-  {
-    "objectID": "news/2025/11/17/uw-causal-reading-group/index.html",
-    "href": "news/2025/11/17/uw-causal-reading-group/index.html",
-    "title": "University of Washington Causal Reading Group talk",
-    "section": "",
-    "text": "I gave a talk at the University of Washington Causal Reading Group on “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies.” The event was held over Zoom."
-  },
-  {
-    "objectID": "news/2025/04/18/ic2s2-2025/index.html",
-    "href": "news/2025/04/18/ic2s2-2025/index.html",
-    "title": "IC2S2 2025 parallel talk accepted",
-    "section": "",
-    "text": "My work, “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies,” has been accepted for a parallel talk at the International Computational Social Science Conference (IC2S2) 2025 in Norrkoping, Sweden."
-  },
-  {
-    "objectID": "news/2025/04/02/jsm-2025/index.html",
-    "href": "news/2025/04/02/jsm-2025/index.html",
-    "title": "JSM 2025 talk accepted",
-    "section": "",
-    "text": "My contributed submission, “Quantifying Causal Effects via Temporal Regression Discontinuity Designs with Time-Varying Effects,” has been accepted for a 15-minute presentation at the Joint Statistical Meetings 2025 in Nashville, Tennessee."
-  },
-  {
-    "objectID": "intuition/2026/03/17/welcome/index.html",
-    "href": "intuition/2026/03/17/welcome/index.html",
-    "title": "Welcome to Intuition",
-    "section": "",
-    "text": "This is a placeholder post. Replace it with your own writing, duplicate the folder structure for new posts, or delete it once you have real content in place."
-  },
-  {
-    "objectID": "cv/index.html",
-    "href": "cv/index.html",
-    "title": "Curriculum vitæ",
-    "section": "",
-    "text": "Download current CV"
-  },
-  {
-    "objectID": "intuition/index.html",
-    "href": "intuition/index.html",
-    "title": "Intuition",
-    "section": "",
-    "text": "Much of my understanding of causal identification comes from a dedicated effort to momentarily dispense with the mathematics and write a story (with pictures!) which does the same job as the maths. Here, I will post stories I’ve written based on concepts useful for and created from my own research as I find it useful to access a deeper understanding of my work.\n\n\n    \n\nNo matching items"
-  },
-  {
-    "objectID": "news/2025/04/11/acic-2025/index.html",
-    "href": "news/2025/04/11/acic-2025/index.html",
-    "title": "ACIC 2025 poster accepted",
-    "section": "",
-    "text": "My poster, “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies,” has been accepted for presentation at ACIC 2025 in Detroit."
-  },
-  {
-    "objectID": "news/2025/10/17/nyu-2025/index.html",
-    "href": "news/2025/10/17/nyu-2025/index.html",
-    "title": "Data Science Frontiers workshop announcement",
-    "section": "",
-    "text": "Dean Knox and I will deliver a talk and workshop on applications of the new autobounds software at the Data Science Frontiers (Society and Politics) conference in New York."
-  },
-  {
-    "objectID": "news/2026/01/18/isaac-newton-institute/index.html",
-    "href": "news/2026/01/18/isaac-newton-institute/index.html",
-    "title": "Isaac Newton Institute poster presentation",
-    "section": "",
-    "text": "I presented a poster at the Foundations of Causal Inference Workshop at the Isaac Newton Institute in Cambridge, United Kingdom, on “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies.”"
-  },
-  {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research",
-    "section": "",
-    "text": "I study causal theory and methodology as inspired by applied questions in social science. I am interested in formalising (often hitherto unformalised) causal models and identification strategies for social scientific questions which permit us to be credible about quantitative inferences of the human experience, which is why partial identification is an important motif of my work."
-  },
-  {
-    "objectID": "research/index.html#current-projects",
-    "href": "research/index.html#current-projects",
-    "title": "Research",
-    "section": "Current projects",
-    "text": "Current projects\n\n\n\n    \n        \n            \n                Kai R. D. Cooper, Guilherme Duarte, Luke Keele, Dean Knox, and Jonathan Mummolo. In preparation. \"Learning From Imperfect Identification Strategies: Automating Causal Inference When Assumptions Fail.\"\n            \n\n            \n            \n                \n                    \n                            causal inference\n                        \n                    \n                    \n                            methods\n                        \n                    \n                    \n                            partial identification\n                        \n                    \n                    \n                            software\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \"Perhaps most importantly, this approach allows for question-driven research\"\n            \n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                \n            \n        \n        \n        \n            \n                Kai R. D. Cooper, Liang Ma, and Daniel J. Graham. \"Quantifying the causal effects of major engineering interventions using a temporal regression discontinuity design: Air quality impacts of the Elizabeth Line in London\".  Submitted to the Annals of Applied Statistics. (2025).\n            \n\n            \n            \n                \n                    \n                            causal inference\n                        \n                    \n                    \n                            policy evaluation\n                        \n                    \n                    \n                            environment\n                        \n                    \n                    \n                            regression discontinuity\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \"[W]e introduce a new long-term effect estimand aimed at quantifying equilibrium effects...\"\n            \n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                \n            \n        \n        \n        \n            \n                Kai R. D. Cooper, Gregory Lanzalotto, Haosen Ge, Jacob Kaplan, Scott Desposato, Dean Knox, and Jonathan Mummolo. In preparation. \"A Principled Approach to Benchmarking in Studies of Racial Discrimination in Traffic Enforcement.\"\n            \n\n            \n            \n                \n                    \n                            causal inference\n                        \n                    \n                    \n                            fairness\n                        \n                    \n                    \n                            policing\n                        \n                    \n                    \n                            measurement\n                        \n                    \n                    \n                            proxies\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \"... the instability of benchmarking results stems from the absence of a causal foundation\"\n            \n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             Poster\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/projects/elizabeth-line-air-quality/index.html",
-    "href": "research/projects/elizabeth-line-air-quality/index.html",
-    "title": "Did the Elizabeth Line Improve Air Quality in London?",
-    "section": "",
-    "text": "Abstract\nAssessing the causal effects of major engineering interventions is difficult because implementation is nonrandom, spillovers are unavoidable, and suitable controls are often unavailable. We develop a temporal regression discontinuity (TRD) design for time-series settings in which treatment begins at a known date and may induce effects that evolve gradually. Within a potential-outcomes framework, we define short-run and finite-horizon effects, and introduce an approach for long-run effect estimation based on the derivative of the estimated effect curve. To accomplish this, we make use of Gaussian process regression and show how it offers advantages over similar methods in the literature. We apply the method to hourly air-pollution data from 77 London monitoring sites to study the opening of the Elizabeth Line on 24 May 2022. Immediate effects on nitrogen dioxide are modest, with citywide reductions of 3.51% at background sites and 2.59% at roadside sites one week after opening. Longer-run effects are larger, averaging 8.51% and 12.45% reductions, respectively, though spatial heterogeneity remains substantial. The results suggest that transport investments can yield gradual, uneven environmental benefits that are missed by discontinuity designs focused only on immediate effects."
-  },
-  {
-    "objectID": "teaching/index.html",
-    "href": "teaching/index.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Introduction to Python for Data Science \n                \n            \n            \n                OIDD (4/7)770 | \n                The Wharton School, University of Pennsylvania\n                \n                | Head TA\n                \n            \n            Introduce the data science workflow in Python via pandas. Responsibilities: technical assistance, quiz creation, office hours, grading, TA management\n\n            \n                \n                 \n                 Spring 2025, 2026 · Philadelphia, Pennsylvania\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Causal Thinking \n                \n            \n            \n                MATH-352 | \n                École polytechnique fédérale de Lausanne\n                \n                | Teaching Assistant\n                \n            \n            Introduce causal inference and develop causal intuitions for non-statisticians. Responsibilities: creation (from scratch) of problem sets and data exercises.\n\n            \n                \n                 \n                 Autumn 2022 · Lausanne, Switzerland\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Imperial Mathematics Year 1 \n                \n            \n            \n                First Year Mathematics | \n                Imperial College London\n                \n                | Peer Tutor\n                \n            \n            Provide academic and pastoral support to first year undergraduates in mathematics.  Responsiblities: hold two weekly classes with ~6 students reviewing that week's material.\n\n            \n                \n                 \n                 AY 2022-2023 · London, United Kingdom\n                \n                \n            \n        \n    \n    \n\nNo matching items"
-  },
-  {
-    "objectID": "teaching/index.html#supportive-roles",
-    "href": "teaching/index.html#supportive-roles",
-    "title": "Teaching",
-    "section": "",
-    "text": "Introduction to Python for Data Science \n                \n            \n            \n                OIDD (4/7)770 | \n                The Wharton School, University of Pennsylvania\n                \n                | Head TA\n                \n            \n            Introduce the data science workflow in Python via pandas. Responsibilities: technical assistance, quiz creation, office hours, grading, TA management\n\n            \n                \n                 \n                 Spring 2025, 2026 · Philadelphia, Pennsylvania\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Causal Thinking \n                \n            \n            \n                MATH-352 | \n                École polytechnique fédérale de Lausanne\n                \n                | Teaching Assistant\n                \n            \n            Introduce causal inference and develop causal intuitions for non-statisticians. Responsibilities: creation (from scratch) of problem sets and data exercises.\n\n            \n                \n                 \n                 Autumn 2022 · Lausanne, Switzerland\n                \n                \n            \n        \n    \n    \n    \n        \n            \n            \n            \n        \n        \n            \n                \n                Imperial Mathematics Year 1 \n                \n            \n            \n                First Year Mathematics | \n                Imperial College London\n                \n                | Peer Tutor\n                \n            \n            Provide academic and pastoral support to first year undergraduates in mathematics.  Responsiblities: hold two weekly classes with ~6 students reviewing that week's material.\n\n            \n                \n                 \n                 AY 2022-2023 · London, United Kingdom\n                \n                \n            \n        \n    \n    \n\nNo matching items"
   }
 ]

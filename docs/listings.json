@@ -1,5 +1,27 @@
 [
   {
+    "listing": "/teaching/index.html",
+    "items": []
+  },
+  {
+    "listing": "/rss.html",
+    "items": [
+      "/intuition/2026/03/17/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/projects/autobounds-imperfect-identification/index.html",
+      "/research/projects/elizabeth-line-air-quality/index.html",
+      "/research/projects/traffic-enforcement-proxies/index.html"
+    ]
+  },
+  {
+    "listing": "/intuition/index.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/news/2026/01/18/isaac-newton-institute/index.html",
@@ -11,39 +33,17 @@
     ]
   },
   {
-    "listing": "/talks/index.html",
-    "items": []
-  },
-  {
-    "listing": "/news/index.html",
-    "items": []
-  },
-  {
     "listing": "/atom.html",
     "items": [
       "/intuition/2026/03/17/welcome/index.html"
     ]
   },
   {
-    "listing": "/intuition/index.html",
+    "listing": "/news/index.html",
     "items": []
   },
   {
-    "listing": "/research/index.html",
-    "items": [
-      "/research/projects/autobounds-imperfect-identification/index.html",
-      "/research/projects/elizabeth-line-air-quality/index.html",
-      "/research/projects/traffic-enforcement-proxies/index.html"
-    ]
-  },
-  {
-    "listing": "/rss.html",
-    "items": [
-      "/intuition/2026/03/17/welcome/index.html"
-    ]
-  },
-  {
-    "listing": "/teaching/index.html",
+    "listing": "/talks/index.html",
     "items": []
   }
 ]
