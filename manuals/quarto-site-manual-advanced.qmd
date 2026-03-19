@@ -1,0 +1,596 @@
+---
+title: "Advanced Manual: Recreating a Full Quarto Personal Site"
+format:
+  html:
+    toc: true
+    toc-location: left
+---
+
+## Goal
+
+This manual explains how to recreate the broader feature set of the original Andrew Heiss site using your own content, voice, branding, and infrastructure.
+
+The original site was not just a collection of pages. It used a consistent architecture:
+
+- one global site config
+- multiple content types
+- custom listing templates
+- custom SCSS styling
+- reusable metadata
+- separate patterns for posts, research, talks, and teaching
+- static-file hosting for PDFs and assets
+- feed generation
+- manual deployment to a server
+
+You can reproduce all of that without copying the content.
+
+## Site Architecture as a System
+
+The original site in [`/Users/kaicooper/Documents/ath-quarto-original`](/Users/kaicooper/Documents/ath-quarto-original) was organized around content models.
+
+### Content model 1: Standard pages
+
+Examples:
+
+- homepage
+- CV
+- 404 page
+- now page
+- uses page
+- AI page
+
+These are hand-written pages where layout and prose matter more than repeated structure.
+
+### Content model 2: Blog-like dated posts
+
+Example in the original site:
+
+- [`/Users/kaicooper/Documents/ath-quarto-original/blog/index.qmd`](/Users/kaicooper/Documents/ath-quarto-original/blog/index.qmd)
+- dated subfolders with `index.qmd` or `index.md`
+
+Use this pattern for:
+
+- essays
+- tutorials
+- technical notes
+- public writing
+- ongoing reflective series
+
+### Content model 3: Research entries with rich metadata
+
+Example in the original site:
+
+- [`/Users/kaicooper/Documents/ath-quarto-original/research/index.qmd`](/Users/kaicooper/Documents/ath-quarto-original/research/index.qmd)
+- item pages like [`/Users/kaicooper/Documents/ath-quarto-original/research/articles/heiss-2012/index.qmd`](/Users/kaicooper/Documents/ath-quarto-original/research/articles/heiss-2012/index.qmd)
+
+Use this pattern when each item needs:
+
+- a landing page
+- citation text
+- PDF links
+- code links
+- abstract
+- appendix, slides, or replication materials
+
+### Content model 4: Structured lists from YAML
+
+Examples in the original site:
+
+- teaching year files
+- talks year files
+
+Use this pattern when entries are mostly metadata and do not need a full page each.
+
+## The Global Config Layer
+
+[`_quarto.yml`](/Users/kaicooper/Documents/ath-quarto-kc/_quarto.yml) is the spine of the site.
+
+Important sections to understand:
+
+### `project`
+
+Controls the site type, preview behavior, render scope, and resources.
+
+Example:
+
+```yaml
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "*.md"
+  resources:
+    - "files/**"
+    - ".htaccess"
+```
+
+Use `resources` for files Quarto should copy as-is.
+
+### `website`
+
+Controls:
+
+- title
+- description
+- navbar
+- footer
+- site URL
+- repo URL
+- analytics
+- social metadata
+
+The original site had richer settings than your starter version. You can add them back later, for example:
+
+```yaml
+website:
+  site-url: "https://yourdomain.com"
+  repo-url: "https://github.com/yourname/your-site"
+  google-analytics: "G-XXXXXXXXXX"
+  twitter-card:
+    image: "/files/social-card.png"
+    card-style: summary_large_image
+  open-graph:
+    image: "/files/social-card.png"
+    locale: en_US
+```
+
+### `format.html`
+
+Controls the default HTML appearance for every page.
+
+This is where your theme file is attached:
+
+```yaml
+format:
+  html:
+    theme:
+      - html/ath.scss
+```
+
+## Reusing the Original Theme Correctly
+
+The original site’s design lives mostly in [`html/ath.scss`](/Users/kaicooper/Documents/ath-quarto-kc/html/ath.scss).
+
+That file controls:
+
+- color palette
+- fonts
+- navbar colors
+- footer styling
+- code colors
+- blog category sidebar
+- responsive layout rules
+- styling for custom listing components
+
+If you want to keep the structure but make it yours, edit these first:
+
+- `$purple`, `$pink`, `$red`, `$orange`, `$light-orange`
+- `$font-family-sans-serif`
+- `$headings-font-family`
+- `$navbar-bg`
+- `$link-color`
+- `$footer-bg`
+
+A safe workflow:
+
+1. duplicate the current SCSS file first
+2. change only colors and fonts
+3. preview the whole site
+4. then change component-specific rules
+
+## Listing Pages: The Most Important Advanced Feature
+
+The original site relies heavily on Quarto listings. This is what lets one page automatically surface many child entries.
+
+### Basic listing anatomy
+
+```yaml
+listing:
+  - id: posts
+    contents: "2026/**/index.qmd"
+    sort: "date desc"
+    template: ../html/blog/listing.ejs
+```
+
+Then later in the page body:
+
+```markdown
+:::{#posts}
+:::
+```
+
+This tells Quarto:
+
+- which files to include
+- how to sort them
+- which custom template should render them
+- where to place the final output in the page
+
+### Why custom templates matter
+
+The original site did not rely on the default Quarto listing look. It used EJS templates in [`html/`](/Users/kaicooper/Documents/ath-quarto-kc/html) to control the markup.
+
+That gives you custom cards, metadata blocks, icons, category chips, thumbnails, and link sections.
+
+If you want new content types later, you can create additional templates like:
+
+- `html/projects/listing.ejs`
+- `html/press/listing.ejs`
+- `html/courses/listing.ejs`
+
+## Rebuilding the Original Sections in Your Own Image
+
+### About / homepage
+
+What the original did:
+
+- banner color
+- profile photo
+- two-column intro layout
+- links to major work areas
+
+How to recreate:
+
+- keep the grid layout in [`index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/index.qmd)
+- add your own headshot in `files/`
+- use `<picture>` only if you want different mobile and desktop crops
+- include a short bio plus one dynamic element, such as news
+
+### CV
+
+What the original did:
+
+- embedded PDF
+- download button
+- custom CSS for iframe container
+
+How to recreate:
+
+- export your CV to PDF
+- store it in `cv/` or `files/`
+- use button + iframe embed if you want a PDF-first CV
+- or write the whole CV directly in Quarto if you want an HTML-native CV
+
+### Intuition / blog
+
+What the original did:
+
+- used dated folders
+- used categories
+- optionally used image thumbnails
+- supported DOI display
+- included tutorial-like posts with external code repos and books
+
+How to recreate:
+
+- keep the dated-post structure
+- use `description` for preview text
+- use `categories` for filtering
+- use `image` when you want thumbnail cards
+- add external links to GitHub, docs, or companion sites in the post body
+
+### Research
+
+What the original did:
+
+- separated entries by type: article, chapter, working paper, review, translation, dormant paper
+- used a custom citation-like listing format
+- gave each item a full details page
+- linked to preprints, final versions, publisher pages, and PDFs
+
+How to recreate:
+
+Option A: keep one simple `projects/` bucket.
+
+Option B: expand into subtypes later:
+
+```text
+research/
+  articles/
+  chapters/
+  working-papers/
+  reports/
+  software/
+  public-writing/
+```
+
+Then update [`research/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/research/index.qmd) with multiple listing blocks, just like the original site.
+
+### Teaching
+
+What the original did:
+
+- grouped courses by academic year
+- used logos or thumbnail graphics
+- linked each semester instance to course sites
+- used a custom card layout
+
+How to recreate:
+
+If your teaching history becomes large, split [`teaching/courses.yml`](/Users/kaicooper/Documents/ath-quarto-kc/teaching/courses.yml) into multiple yearly files:
+
+```text
+teaching/
+  ay_2025_26.yml
+  ay_2026_27.yml
+  index.qmd
+```
+
+Then define multiple listings on the page.
+
+### Talks
+
+What the original did:
+
+- grouped talks by year
+- attached multiple link types
+- linked slides, companion sites, video, podcast, or GitHub
+
+How to recreate:
+
+Once your talks list grows, split [`talks/talks.yml`](/Users/kaicooper/Documents/ath-quarto-kc/talks/talks.yml) by year and use multiple listing IDs.
+
+### News feed
+
+What your new site adds:
+
+- a homepage update stream
+- a dedicated archive page
+- low-friction short-form updates
+
+This is a good addition because it gives you a lightweight publishing lane between permanent pages and full posts.
+
+## Advanced Front Matter Patterns
+
+### Social cards and thumbnails
+
+The original blog used fields like:
+
+```yaml
+image: "img/card.png"
+twitter-card:
+  image: "img/card.png"
+open-graph:
+  image: "img/card.png"
+```
+
+Use this whenever a page should look good when shared.
+
+### Page-specific static resources
+
+The original blog sometimes used:
+
+```yaml
+resources:
+  - "_book/**"
+  - "img/*"
+```
+
+Use `resources` when a page depends on files that Quarto might not automatically copy, such as:
+
+- image folders
+- generated mini-sites
+- JavaScript bundles
+- downloadable attachments
+
+### Executable settings
+
+The original research section used shared defaults in [`research/_metadata.yml`](/Users/kaicooper/Documents/ath-quarto-kc/research/_metadata.yml).
+
+This is powerful because folders can inherit shared settings like:
+
+- date format
+- title banner color
+- execution defaults
+- template partials
+
+Use folder-level `_metadata.yml` when many child pages should behave similarly.
+
+## Images, Media, and Assets at Scale
+
+A robust pattern is to decide asset scope deliberately.
+
+### Keep assets beside the page when:
+
+- only one page uses them
+- they belong to one article, post, or project
+- they include thumbnails, figures, or downloadable appendices
+
+### Keep assets in `files/` when:
+
+- many pages reuse them
+- they are site-level assets
+- they include icons, profile images, logos, or shared PDFs
+
+### Recommended conventions
+
+- `img/` inside a page folder for post-specific images
+- `files/profile/` for headshots or profile cards
+- `files/downloads/` for generic PDFs and handouts
+- `files/social/` for social cards
+
+## Integrating External Code and Repositories
+
+A major strength of the original site is that it treats the website as a public index to a wider body of work.
+
+Use these patterns.
+
+### Pattern 1: Website page + GitHub repo
+
+For a talk, tutorial, or package:
+
+- website page summarizes what it is
+- GitHub repo stores the code
+- page links to repo and demo
+
+### Pattern 2: Website page + companion site
+
+For courses, workshops, and books:
+
+- main site contains the catalog entry
+- companion site contains the full teaching or project materials
+- GitHub repo hosts source code separately
+
+### Pattern 3: Website page + downloadable local files
+
+For research:
+
+- project page contains abstract and context
+- local PDFs store preprints or appendices
+- external links point to DOI, publisher, or replication repo
+
+## Integrating Interactive Content
+
+The original site included advanced Quarto features like:
+
+- OJS chunks
+- tutorial sub-sites
+- project-specific static outputs
+
+You can use three layers of interactivity.
+
+### Layer 1: Static plots generated by R or Python
+
+Good default choice.
+
+### Layer 2: OJS / Observable Plot inside Quarto
+
+Good for small dynamic charts and controls without a server.
+
+### Layer 3: Separate apps or dashboards
+
+Good when the project is too large for a standard page. Then link to:
+
+- a Quarto dashboard
+- a Shiny app
+- a separate static app site
+
+## Feeds and Syndication
+
+The original site had Atom and RSS feed pages. Your starter site keeps that pattern.
+
+Why keep them:
+
+- readers can subscribe
+- some automation tools can ingest them
+- they make your writing portable and machine-readable
+
+If you later want separate feeds for `news` and `intuition`, create additional feed files with different listing scopes.
+
+## Custom Templates and Partial Overrides
+
+The original research section used a title-block partial and custom listing templates.
+
+This is the next level of Quarto customization.
+
+Use custom templates when:
+
+- you dislike the default listing appearance
+- one content type needs special metadata formatting
+- you want visually distinct sections without hand-formatting every entry
+
+Do not overuse them. The best use case is repeated structure.
+
+## Custom 404 Page
+
+The original site had a styled custom 404 page in [`/Users/kaicooper/Documents/ath-quarto-original/404.qmd`](/Users/kaicooper/Documents/ath-quarto-original/404.qmd).
+
+You already have a minimal version in [`404.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/404.qmd). You can make it more useful by adding:
+
+- a link back home
+- links to research, intuition, and CV
+- a site search suggestion
+
+## Domain, Hosting, and Deployment Patterns
+
+### Option 1: GitHub Pages
+
+Recommended if you want the cleanest public workflow.
+
+Suggested setup:
+
+- repo: `kai-cooper-site`
+- custom domain: `www.yourdomain.com`
+- GitHub Action runs `quarto render`
+- action deploys `_site/`
+
+### Option 2: Netlify or Cloudflare Pages
+
+Recommended if you want easy previews for pull requests and dead-simple domain handling.
+
+### Option 3: VPS or institutional server
+
+Recommended if you want full control.
+
+The original site used `rsync` to upload `_site/` to a remote server. That is reliable for static sites if you have shell access.
+
+## A Recommended Evolution Path for Your Site
+
+### Phase 1: Minimal but complete
+
+- About
+- CV
+- Intuition
+- Research
+- Teaching
+- Talks
+- News
+
+### Phase 2: Personalize brand and metadata
+
+- colors
+- fonts
+- profile image
+- domain
+- social metadata
+- analytics
+
+### Phase 3: Expand content models
+
+- yearly teaching files
+- yearly talks files
+- multiple research buckets
+- downloads section
+- project pages
+
+### Phase 4: Advanced publication workflow
+
+- GitHub Actions deployment
+- auto-generated social images
+- richer bibliography integration
+- separate companion sites for major projects
+
+## Feature Recreation Map
+
+If you want to recreate a specific original-site feature, use this mapping.
+
+- Two-column homepage intro: adapt [`index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/index.qmd)
+- Navbar and footer: edit [`_quarto.yml`](/Users/kaicooper/Documents/ath-quarto-kc/_quarto.yml)
+- Color palette and fonts: edit [`html/ath.scss`](/Users/kaicooper/Documents/ath-quarto-kc/html/ath.scss)
+- Post archive with categories: adapt [`intuition/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/intuition/index.qmd) and [`html/blog/listing.ejs`](/Users/kaicooper/Documents/ath-quarto-kc/html/blog/listing.ejs)
+- Research citations with buttons: adapt [`research/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/research/index.qmd) and [`html/research/listing.ejs`](/Users/kaicooper/Documents/ath-quarto-kc/html/research/listing.ejs)
+- Teaching cards: adapt [`teaching/courses.yml`](/Users/kaicooper/Documents/ath-quarto-kc/teaching/courses.yml) and [`html/teaching/listing.ejs`](/Users/kaicooper/Documents/ath-quarto-kc/html/teaching/listing.ejs)
+- Talks archive with slides and repo links: adapt [`talks/talks.yml`](/Users/kaicooper/Documents/ath-quarto-kc/talks/talks.yml) and [`html/talks/listing.ejs`](/Users/kaicooper/Documents/ath-quarto-kc/html/talks/listing.ejs)
+- News feed on homepage: adapt [`news/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/news/index.qmd) and [`index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/index.qmd)
+- Feed generation: edit [`atom.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/atom.qmd) and [`rss.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/rss.qmd)
+
+## Standards to Follow So the Site Stays Manageable
+
+- One content type, one consistent structure.
+- Keep repeated metadata in YAML, not hand-written HTML.
+- Keep shared styling in SCSS, not scattered inline styles.
+- Let listing pages generate archives automatically.
+- Use local page folders for self-contained projects.
+- Put only reusable assets in `files/`.
+- Treat the website as an index to your broader scholarly and creative work.
+
+## What to Build Next
+
+The highest-value next steps are:
+
+1. add your real homepage bio and headshot
+2. decide whether your CV is PDF-first or HTML-first
+3. define your research buckets
+4. decide whether teaching and talks should stay single-file or become year-based
+5. connect the site to a GitHub repository and deployment target
+6. standardize how you will link code, data, slides, and downloads across the site

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Teaching placeholder card</title>
+  <desc id="desc">Abstract placeholder graphic for course listings.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#170C3A" />
+      <stop offset="100%" stop-color="#CF4446" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)" rx="24" />
+  <circle cx="150" cy="120" r="72" fill="#FB9E07" opacity="0.9" />
+  <circle cx="500" cy="280" r="96" fill="#F6D645" opacity="0.35" />
+  <path d="M96 296h448" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.75" />
+  <path d="M96 246h300" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.55" />
+  <path d="M96 196h220" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.4" />
+</svg>

@@ -1,0 +1,10 @@
+---
+title: "IC2S2 2025 parallel talk accepted"
+date: 2025-04-18
+description: "Parallel Talk. Using causal inference to unmask racial discrimination in traffic enforcement via proxies has been accepted for IC2S2 2025 in Norrkoping, Sweden."
+categories:
+  - talks
+  - policing
+---
+
+My work, _"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies,"_ has been accepted for a parallel talk at the International Computational Social Science Conference (IC2S2) 2025 in Norrkoping, Sweden.

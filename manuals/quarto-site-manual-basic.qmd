@@ -1,0 +1,540 @@
+---
+title: "Basic Manual: Building Your Website in Quarto"
+format:
+  html:
+    toc: true
+    toc-location: left
+---
+
+## Purpose
+
+This manual explains how to build and maintain your Quarto site at a practical level using the structure now in [`_quarto.yml`](/Users/kaicooper/Documents/ath-quarto-kc/_quarto.yml), the theme in [`html/ath.scss`](/Users/kaicooper/Documents/ath-quarto-kc/html/ath.scss), and the content patterns copied from the original site in [`/Users/kaicooper/Documents/ath-quarto-original`](/Users/kaicooper/Documents/ath-quarto-original).
+
+The core idea is simple:
+
+1. Quarto turns `.qmd` and `.md` files into web pages.
+2. [`_quarto.yml`](/Users/kaicooper/Documents/ath-quarto-kc/_quarto.yml) defines the site-level behavior.
+3. Front matter at the top of each page controls page-specific behavior.
+4. Listings let one page automatically display many child entries.
+5. SCSS and templates control the styling and repeated layout patterns.
+
+## Your Site Structure
+
+The stripped-down version is organized like this:
+
+```text
+ath-quarto-kc/
+  _quarto.yml
+  _variables.yml
+  index.qmd
+  cv/
+  intuition/
+  news/
+  research/
+  teaching/
+  talks/
+  html/
+  files/
+  manuals/
+```
+
+What each part does:
+
+- [`_quarto.yml`](/Users/kaicooper/Documents/ath-quarto-kc/_quarto.yml): global site config, navbar, footer, theme, render behavior.
+- [`_variables.yml`](/Users/kaicooper/Documents/ath-quarto-kc/_variables.yml): reusable values such as years.
+- [`index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/index.qmd): homepage and About page.
+- [`cv/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/cv/index.qmd): CV page.
+- [`intuition/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/intuition/index.qmd): listing page for your posts.
+- [`news/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/news/index.qmd): listing page for short updates.
+- [`research/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/research/index.qmd): listing page for research entries.
+- [`teaching/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/teaching/index.qmd): listing page backed by YAML.
+- [`talks/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/talks/index.qmd): listing page backed by YAML.
+- [`html/ath.scss`](/Users/kaicooper/Documents/ath-quarto-kc/html/ath.scss): your theme.
+- [`html/blog/listing.ejs`](/Users/kaicooper/Documents/ath-quarto-kc/html/blog/listing.ejs): blog/news list layout.
+- [`html/research/listing.ejs`](/Users/kaicooper/Documents/ath-quarto-kc/html/research/listing.ejs): research list layout.
+- [`html/teaching/listing.ejs`](/Users/kaicooper/Documents/ath-quarto-kc/html/teaching/listing.ejs): course card layout.
+- [`html/talks/listing.ejs`](/Users/kaicooper/Documents/ath-quarto-kc/html/talks/listing.ejs): talks list layout.
+- [`files/`](/Users/kaicooper/Documents/ath-quarto-kc/files): static assets like PDFs, bibliography files, icons, and images.
+
+## How Quarto Pages Work
+
+Every page begins with YAML front matter, like this:
+
+```yaml
+---
+title: "About"
+description: "Short summary"
+---
+```
+
+Then below that comes the page body in Markdown or Quarto Markdown.
+
+A minimal page looks like this:
+
+```markdown
+---
+title: "My Page"
+---
+
+This is my page.
+
+## Section
+
+More content here.
+```
+
+## The Homepage / About Page
+
+Your homepage is [`index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/index.qmd). It currently does two jobs:
+
+- introduces you
+- shows recent news automatically
+
+To edit your bio, replace the text in the left column.
+
+To keep the news feed working, leave this block in place:
+
+```markdown
+:::{#home-news}
+:::
+```
+
+That placeholder is populated by the `listing:` settings in the page’s front matter.
+
+## Navbar and Footer
+
+The navbar and footer are set globally in [`_quarto.yml`](/Users/kaicooper/Documents/ath-quarto-kc/_quarto.yml).
+
+To add a page to the navbar, add another item under `website.navbar.left`:
+
+```yaml
+website:
+  navbar:
+    left:
+      - text: "About"
+        href: "index.qmd"
+      - text: "Projects"
+        href: "projects/index.qmd"
+```
+
+To change footer text, edit `website.page-footer`.
+
+## Creating Standard Pages
+
+If you want a normal standalone page like `projects`, `contact`, or `methods`, create a folder and add `index.qmd`:
+
+```text
+projects/
+  index.qmd
+```
+
+Example:
+
+```markdown
+---
+title: "Projects"
+---
+
+This page introduces my current projects.
+```
+
+Then add it to the navbar if you want it in the main menu.
+
+## Writing Posts in Intuition
+
+The Intuition section is the renamed blog.
+
+The listing page is [`intuition/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/intuition/index.qmd).
+New posts live in dated folders like this:
+
+```text
+intuition/
+  2026/
+    03/
+      17/
+        welcome/
+          index.qmd
+```
+
+Use this as your template:
+
+```markdown
+---
+title: "Post title"
+date: 2026-03-17
+description: "One-sentence summary for the listing page"
+categories:
+  - category-one
+  - category-two
+image: "img/card.png"
+---
+
+Your post starts here.
+```
+
+Use posts when you want:
+
+- essays
+- tutorials
+- notes
+- reflections
+- technical explanations
+
+## Adding Images to Posts or Pages
+
+There are two common patterns.
+
+### Pattern 1: Image beside a page
+
+If a page uses a local image, keep the image in a nearby folder:
+
+```text
+intuition/2026/03/17/my-post/
+  index.qmd
+  img/
+    chart.png
+```
+
+Then link it like this:
+
+```markdown
+![Chart showing results](img/chart.png)
+```
+
+### Pattern 2: Shared site asset
+
+If the image should be reused across multiple pages, put it in [`files/`](/Users/kaicooper/Documents/ath-quarto-kc/files):
+
+```markdown
+![Profile photo](/files/profile.jpg)
+```
+
+### Image tips
+
+- Use relative paths like `img/chart.png` when the asset belongs to one page.
+- Use root-style paths like `/files/profile.jpg` when the asset is shared.
+- Set `image:` in front matter if you want thumbnails, cards, or social previews.
+
+## Adding Links
+
+### Normal link
+
+```markdown
+[My GitHub](https://github.com/yourname)
+```
+
+### Link to another page on your site
+
+```markdown
+[Research](/research/)
+```
+
+### Link to a PDF stored in your repo
+
+Put the file in [`files/`](/Users/kaicooper/Documents/ath-quarto-kc/files), then link it:
+
+```markdown
+[Download my CV](/files/cv.pdf)
+```
+
+## Code Blocks
+
+Basic code block:
+
+````markdown
+```r
+1 + 1
+```
+````
+
+Executable R chunk:
+
+````markdown
+```{r}
+summary(cars)
+```
+````
+
+Executable Python chunk:
+
+````markdown
+```{python}
+print("hello")
+```
+````
+
+From the original site, you can also use Observable JS blocks for interactive browser-side graphics. Example pattern from one of the original blog posts:
+
+````markdown
+```{ojs}
+Plot.plot({
+  marks: [Plot.ruleY([0])]
+})
+```
+````
+
+Use OJS when you want charts to run in the browser without a server.
+
+## Building a News Feed
+
+Your homepage news feed is powered by files in [`news/`](/Users/kaicooper/Documents/ath-quarto-kc/news).
+
+To add an item, create a dated folder:
+
+```text
+news/2026/03/20/new-paper/
+  index.qmd
+```
+
+Example:
+
+```markdown
+---
+title: "New paper online"
+date: 2026-03-20
+description: "A short update about a new paper or event."
+categories:
+  - research
+---
+
+Longer note if you want one.
+```
+
+This will appear automatically:
+
+- on the homepage via [`index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/index.qmd)
+- on the full news page via [`news/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/news/index.qmd)
+
+## Building the Research Section
+
+The research section is driven by pages, not YAML. The listing page is [`research/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/research/index.qmd).
+
+Each research item is its own page, for example:
+
+```text
+research/projects/my-paper/
+  index.qmd
+```
+
+Use this front matter pattern:
+
+```yaml
+---
+title: "Paper title"
+date: 2026-03-17
+categories:
+  - public policy
+  - methods
+haiku:
+  - One short line
+  - Another short line
+  - Final short line
+pub-info:
+  reference: "Cooper, Kai. 2026. \"Paper title.\" Working paper."
+  links:
+    - name: "Preprint"
+      url: "paper.pdf"
+      icon: fa-solid fa-file-pdf
+      local: true
+    - name: "Code"
+      url: "https://github.com/yourname/project-repo"
+      icon: fa-brands fa-github
+---
+```
+
+Why this matters:
+
+- `pub-info.reference` is what appears in the research listing.
+- `pub-info.links` creates the buttons for PDF, DOI, code, appendix, or publisher links.
+- `local: true` tells the template to look for the file in the same folder as the page.
+
+If you want a downloadable paper PDF, store it in the same folder as the research page.
+
+## Building the Teaching Section
+
+The teaching page is different: it uses YAML data in [`teaching/courses.yml`](/Users/kaicooper/Documents/ath-quarto-kc/teaching/courses.yml).
+
+Each course entry looks like this:
+
+```yaml
+- title: Data Visualization
+  description: "Course description here"
+  university: Your institution
+  number: COURSE 1234
+  url: https://course-site.example.com
+  logo: /files/placeholders/teaching-card.svg
+  semester:
+    - name: Spring 2026
+      url: https://course-site.example.com
+    - name: Fall 2026
+```
+
+This is useful when:
+
+- the page is mainly structured metadata
+- you want multiple cards in a consistent format
+- each entry is short
+
+## Building the Talks Section
+
+Talks also use YAML data in [`talks/talks.yml`](/Users/kaicooper/Documents/ath-quarto-kc/talks/talks.yml).
+
+Example:
+
+```yaml
+- title: "Using Quarto for research websites"
+  date: 2026-04-15
+  description: "Invited talk for a methods workshop"
+  location: Chicago, Illinois
+  links:
+    - name: Slides
+      url: https://yourname.github.io/quarto-talk/slides.html
+      icon: fa-solid fa-chalkboard-user
+    - name: GitHub repository
+      url: https://github.com/yourname/quarto-talk
+      icon: fa-brands fa-github
+```
+
+This pattern is ideal for:
+
+- conference talks
+- workshops
+- lectures
+- panels
+- podcasts
+
+## Embedding PDFs, Downloads, and Other Files
+
+For any file you want users to download:
+
+1. store it in [`files/`](/Users/kaicooper/Documents/ath-quarto-kc/files) or next to the page that uses it
+2. link to it normally
+
+Example:
+
+```markdown
+[Download syllabus](/files/syllabus.pdf)
+```
+
+If you want an embedded PDF page, the original CV page is a model. It used an iframe and a download button in [`/Users/kaicooper/Documents/ath-quarto-original/cv/index.qmd`](/Users/kaicooper/Documents/ath-quarto-original/cv/index.qmd).
+
+## Feeds: RSS and Atom
+
+Your site already has [`atom.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/atom.qmd) and [`rss.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/rss.qmd).
+
+These create machine-readable feeds for Intuition posts.
+
+You usually do not edit them often. You only need to ensure they point at the right content folder.
+
+## Previewing Before Hosting
+
+From the project root:
+
+```bash
+quarto preview
+```
+
+To render once:
+
+```bash
+quarto render
+```
+
+The rendered site goes into `_site/`.
+
+## Hosting Options
+
+### GitHub Pages
+
+Good when:
+
+- you want free static hosting
+- you already use GitHub
+- you want version control and public source code
+
+Typical workflow:
+
+1. put the site in a GitHub repository
+2. render the site
+3. publish `_site/` via GitHub Pages or GitHub Actions
+
+### Netlify or Cloudflare Pages
+
+Good when:
+
+- you want easy drag-and-drop or git-based deploys
+- you want custom domains and HTTPS with little setup
+
+### Posit Connect
+
+Good when:
+
+- you want tighter R/Quarto integration
+- you may eventually host interactive or scheduled content
+
+### Manual server upload
+
+The original site used a simple `rsync` deployment script in [`/Users/kaicooper/Documents/ath-quarto-original/deploy.sh`](/Users/kaicooper/Documents/ath-quarto-original/deploy.sh). That pattern is still valid if you control a server.
+
+## Hosting Code Alongside the Site
+
+A strong pattern from the original site is this:
+
+- website page explains the project
+- GitHub repository hosts the code
+- site links to the repo
+- talks and posts link out to slides, companion sites, and repositories
+
+Recommended setup:
+
+- one repo for your main website
+- one repo per substantial talk, app, or tutorial
+- link those repos from research pages, talks, or posts
+
+Example links for a project page:
+
+```yaml
+pub-info:
+  links:
+    - name: Code
+      url: https://github.com/yourname/project-name
+      icon: fa-brands fa-github
+    - name: Data
+      url: https://osf.io/abcd1/
+      icon: fa-solid fa-database
+    - name: Preprint
+      url: paper.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+```
+
+## A Good Content Workflow
+
+For each new thing you publish, decide which bucket it belongs to:
+
+- `news/`: brief update
+- `intuition/`: reflective or tutorial-style post
+- `research/`: paper or project page
+- `teaching/`: course card or resource page
+- `talks/`: presentation entry
+- standalone page: permanent navigation page
+
+## First Changes You Should Make
+
+1. Replace the biography text in [`index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/index.qmd).
+2. Replace the placeholder course in [`teaching/courses.yml`](/Users/kaicooper/Documents/ath-quarto-kc/teaching/courses.yml).
+3. Replace the placeholder talk in [`talks/talks.yml`](/Users/kaicooper/Documents/ath-quarto-kc/talks/talks.yml).
+4. Replace the starter research item in [`research/projects/site-template/index.qmd`](/Users/kaicooper/Documents/ath-quarto-kc/research/projects/site-template/index.qmd).
+5. Add your first real news item and first real Intuition post.
+6. Add your social links and any extra navbar items in [`_quarto.yml`](/Users/kaicooper/Documents/ath-quarto-kc/_quarto.yml).
+
+## Minimal Checklist for Every New Page
+
+- clear `title`
+- useful `description`
+- correct `date` if it is time-based
+- working links
+- local files stored in the right folder
+- image path correct
+- categories added if the page is part of a listing
+- page preview checked with `quarto preview`

@@ -1,0 +1,28 @@
+---
+title: "Did the Elizabeth Line Improve Air Quality in London?"
+#date: 2025-08-01
+author:
+  - name: Kai Cooper
+    affiliation: The Wharton School, University of Pennsylvania
+    orcid: 0000-0002-0351-5427
+  - name: Liang Ma
+    affiliation: Department of Civil and Environmental Engineering, Imperial College London
+    orcid: 0000-0002-0048-7416
+  - name: Dan Graham
+    affiliation: Department of Civil and Environmental Engineering, Imperial College London
+    orcid: 0000-0002-6971-8737
+categories:
+  - causal inference
+  - policy evaluation
+  - environment
+  - regression discontinuity
+haiku:
+  - "\"[W]e introduce a new long-term effect estimand aimed at quantifying equilibrium effects...\""
+pub-info:
+  reference: >-
+   Kai R. D. Cooper, Liang Ma, and Daniel J. Graham. "Quantifying the causal effects of major engineering interventions using a temporal regression discontinuity design: Air quality impacts of the Elizabeth Line in London". <em> Submitted to the Annals of Applied Statistics.</em> (2025).
+---
+
+# Abstract
+
+Assessing the causal effects of major engineering interventions is difficult because implementation is nonrandom, spillovers are unavoidable, and suitable controls are often unavailable. We develop a temporal regression discontinuity (TRD) design for time-series settings in which treatment begins at a known date and may induce effects that evolve gradually. Within a potential-outcomes framework, we define short-run and finite-horizon effects, and introduce an approach for long-run effect estimation based on the derivative of the estimated effect curve. To accomplish this, we make use of Gaussian process regression and show how it offers advantages over similar methods in the literature. We apply the method to hourly air-pollution data from 77 London monitoring sites to study the opening of the Elizabeth Line on 24 May 2022. Immediate effects on nitrogen dioxide are modest, with citywide reductions of 3.51% at background sites and 2.59% at roadside sites one week after opening. Longer-run effects are larger, averaging 8.51% and 12.45% reductions, respectively, though spatial heterogeneity remains substantial. The results suggest that transport investments can yield gradual, uneven environmental benefits that are missed by discontinuity designs focused only on immediate effects.

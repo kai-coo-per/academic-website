@@ -1,0 +1,25 @@
+---
+title: "Intuition"
+author: ""
+description: "Causal stories"
+listing:
+  - id: intuition-posts
+    contents:
+      - "**/index.qmd"
+      - "!index.qmd"
+    sort: "date desc"
+    template: ../html/blog/listing.ejs
+    categories: true
+page-layout: full
+toc-title: Year
+toc-location: right
+date-format: "D MMMM, YYYY"
+code-tools: false
+comments: false
+freeze: false
+---
+
+Much of my understanding of causal identification comes from a dedicated effort to momentarily dispense with the mathematics and write a story (with pictures!) which does the same job as the maths. Here, I will post stories I've written based on concepts useful for and created from my own research as I find it useful to access a deeper understanding of my work. 
+
+:::{#intuition-posts}
+:::

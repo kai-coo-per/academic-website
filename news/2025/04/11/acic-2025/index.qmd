@@ -1,0 +1,10 @@
+---
+title: "ACIC 2025 poster accepted"
+date: 2025-04-11
+description: "Poster Presentation. Using causal inference to unmask racial discrimination in traffic enforcement via proxies has been accepted for ACIC 2025 in Detroit."
+categories:
+  - talks
+  - policing
+---
+
+My poster, _"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies,"_ has been accepted for presentation at ACIC 2025 in Detroit.

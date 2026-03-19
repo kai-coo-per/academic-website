@@ -1,0 +1,28 @@
+- title: Introduction to Python for Data Science
+  description: "Introduce the data science workflow in Python via pandas.<br><em> Responsibilities: technical assistance, quiz creation, office hours, grading, TA management</em>"
+  university: The Wharton School, University of Pennsylvania
+  number: OIDD (4/7)770
+  role: Head TA
+  logo: /files/placeholders/teaching-card.svg
+  semester:
+    - name: Spring 2025, 2026 · Philadelphia, Pennsylvania
+
+- title: Causal Thinking
+  description: "Introduce causal inference and develop causal intuitions for non-statisticians.<br>
+   <em>Responsibilities: creation (from scratch) of problem sets and data exercises</em>."
+  university: École polytechnique fédérale de Lausanne
+  number: MATH-352
+  role: Teaching Assistant
+  logo: /files/placeholders/teaching-card.svg
+  semester:
+    - name: Autumn 2022 · Lausanne, Switzerland
+
+- title: Imperial Mathematics Year 1
+  description: "Provide academic and pastoral support to first year undergraduates in mathematics.<br> 
+    <em>Responsiblities: hold two weekly classes with ~6 students reviewing that week's material</em>."
+  university: Imperial College London
+  number: First Year Mathematics
+  role: Peer Tutor
+  logo: /files/placeholders/teaching-card.svg
+  semester:
+    - name: AY 2022-2023 · London, United Kingdom

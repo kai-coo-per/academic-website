@@ -1,0 +1,17 @@
+---
+title: "News"
+listing:
+  - id: news-feed
+    contents:
+      - "**/index.qmd"
+      - "!index.qmd"
+    sort: "date desc"
+    template: ../html/blog/listing.ejs
+page-layout: full
+date-format: "MMMM D, YYYY"
+---
+
+Recent updates, talks, presentations, and workshop announcements.
+
+:::{#news-feed}
+:::

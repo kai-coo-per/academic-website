@@ -1,0 +1,25 @@
+---
+title: "Talks"
+listing:
+  - id: talks-list
+    contents: talks.yml
+    sort: "date desc"
+    template: ../html/talks/listing.ejs
+  - id: workshops-list
+    contents: workshops.yml
+    sort: "date desc"
+    template: ../html/talks/listing.ejs
+title-block-banner: "#FB9E07"
+page-layout: full
+toc: false
+date-format: "D MMMM, YYYY"
+---
+
+## Presentations
+
+:::{#talks-list}
+:::
+
+## Workshops
+:::{#workshops-list}
+:::

@@ -1,0 +1,19 @@
+---
+title: "Research"
+listing:
+  - id: projects
+    contents: "projects/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+page-layout: full
+include-back-link: false
+toc-location: right
+---
+
+I study causal theory and methodology as inspired by applied questions in social science. I am interested in formalising (often hitherto unformalised) causal models and identification strategies for social scientific questions which permit us to be credible about quantitative inferences of the human experience, which is why partial identification is an important motif of my work. 
+
+## Current projects
+
+:::{#projects}
+:::

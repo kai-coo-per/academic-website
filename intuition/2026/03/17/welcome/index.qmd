@@ -1,0 +1,9 @@
+---
+title: "Welcome to Intuition"
+date: 2026-03-17
+description: "A starter post to confirm the section is wired up and ready for new writing."
+categories:
+  - setup
+---
+
+This is a placeholder post. Replace it with your own writing, duplicate the folder structure for new posts, or delete it once you have real content in place.

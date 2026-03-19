@@ -1,0 +1,52 @@
+---
+title: "A Principled Approach to Benchmarking in Studies of Racial Discrimination"
+# date: 2025-07-01
+author:
+  - name: Kai Cooper
+    affiliation: The Wharton School, University of Pennsylvania
+    orcid: 0000-0002-0351-5427
+  - name: Gregory Lanzalotto
+    affiliation: The Wharton School, University of Pennsylvania
+    # orcid: ADD-ORCID-HERE
+  - name: Haosen Ge
+    affiliation: The Wharton School, University of Pennsylvania
+    # orcid: ADD-ORCID-HERE
+  - name: Jacob Kaplan
+    affiliation: School of Public and Internaional Affairs, Princeton University
+    orcid: 0000-0002-0601-0387
+  - name: Scott Desposato
+    affiliation: Department of Political Science, UC San Diego
+    orcid: 0000-0001-7722-1766
+  - name: Dean Knox
+    affiliation: The Wharton School, University of Pennsylvania
+    orcid: 0000-0002-1945-7938
+  - name: Jonathan Mummolo
+    affiliation: School of Public and Internaional Affairs, Princeton University
+    orcid: 0000-0002-5639-3718
+categories:
+  - causal inference
+  - fairness
+  - policing
+  - measurement
+  - proxies
+pub-info:
+  reference: >-
+   Kai R. D. Cooper, Gregory Lanzalotto, Haosen Ge, Jacob Kaplan, Scott Desposato, Dean Knox, and Jonathan Mummolo. In preparation. "A Principled Approach to Benchmarking in Studies of Racial Discrimination in Traffic Enforcement."
+  links:
+    - name: Poster
+      url: foundations_of_causal_poster-5.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+    # - name: Final version
+    #   url: https://doi.org/ADD-DOI-HERE
+    #   icon: fa-solid fa-scroll
+    # - name: Add to Zotero
+    #   url: https://www.zotero.org/save?type=doi&q=ADD-DOI-HERE
+    #   icon: ai ai-zotero
+haiku:
+  - "\"... the instability of benchmarking results stems from the absence of a causal foundation\""
+---
+
+# Abstract
+
+Racial bias in policing is well documented. Traffic stops represent the most common type of encounter in which civilians interact with police, which makes this an important setting for investigation of police behavior. Evidence-based debates in this area frequently rely on case-specific benchmarks to evaluate the racial distribution of police stops. Often, benchmarks such as per-capita demographics or not-at-fault drivers in vehicle collisions are used. However, these measures only approximate the intended comparison because they fail to (i) precisely define the causal contrast, (ii) accurately describe the nature of drivers visible to officers, (iii) explain disparities due to potentially biased selection decisions by officers. In this work we formally define racial bias as a violation of an individual fairness criterion: officer decision-making should be ignorant of race conditional on the behavior of the civilian, i.e. whether or not they are driving dangerously. This latter, however, is unmeasurable. To address this issue, we build on the growing proximal causal inference literature to make use of cameras, crashes and checkpoints as negative outcome controls for identification, under certain assumptions which may be probed via a sensitivity analysis. We will extend the method's viability to a host of imperfect data settings which plague policing, e.g. when race is mismeasured or unavailable. We finish with applications of the approach to a variety of U.S. police jurisdictions.

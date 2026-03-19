@@ -1,0 +1,83 @@
+---
+title: "Bio"
+pagetitle: "Kai Cooper"
+description-meta: "Kai Cooper frontpage."
+main-photo: /files/profiles/kai-headshot.jpg
+main-photo-square: /files/profiles/kai-headshot-square.jpg
+title-block-banner: "#CF4446"
+listing:
+  - id: home-news
+    contents:
+      - "news/**/index.qmd"
+      - "!news/index.qmd"
+    sort: "date desc"
+    type: default
+    max-items: 6
+    template: html/blog/listing.ejs
+format:
+  html:
+    quarto-template-params:
+      banner-header-class: "home"
+---
+
+```{=html}
+<style>
+.home-profile-photo {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+}
+</style>
+```
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-sm-4}
+
+```{=html}
+<div class="grid" style="--bs-columns: 5; row-gap: 0;">
+  <div class="g-col-1 g-col-sm-0"></div>
+  <div class="g-col-3 g-col-sm-5">
+    <picture>
+      <source media="(max-width: 576px)" srcset="{{< meta main-photo-square >}}">
+      <source media="(min-width: 576px)" srcset="{{< meta main-photo >}}">
+      <img class="img-fluid home-profile-photo" src="{{< meta main-photo >}}" alt="{{< meta author-meta >}}">
+    </picture>
+  </div>
+  <div class="g-col-1 g-col-sm-0"></div>
+</div>
+```
+
+:::
+
+::: {.g-col-12 .g-col-sm-8}
+
+Welcome! I'm Kai, a PhD student in the [Operations, Information and Decisions Department](https://oid.wharton.upenn.edu) at [The Wharton School of the University of Pennsylvania](https://www.wharton.upenn.edu/), and an affiliate of the [Centre for Causal Inference](https://dbei.med.upenn.edu/center-of-excellence/cci/) at Penn Biostat. I am very fortunate to be advised by [Dean Knox](https://dcknox.github.io).
+
+I grew up in Birmingham, UK (but support Arsenal FC). Before joining Penn, I earned a master's degree in mathematics from [Imperial College London](https://www.imperial.ac.uk/mathematics/), including a year studying abroad at the [École polytechnique fédérale de Lausanne](https://www.epfl.ch/en/) in Switzerland.
+
+When not in the office, you'll usually find me at the cinema, playing badminton, or reading and watching dystopian science fiction.
+
+:::
+
+::: {.g-col-12}
+
+## Research interests
+
+I study **causal inference** in theory and application. My research broadly follows two streams: (i) developing partial identification strategies that permit causal inference for social scientific questions in challenging data environments, and (ii) applying modern causal inference techniques to policy evaluation and fairness in social and institutional settings such as police enforcement and education.
+
+:::
+
+::: {.g-col-12}
+
+## News
+
+:::{#home-news}
+:::
+
+[All news](/news/)
+
+:::
+
+:::

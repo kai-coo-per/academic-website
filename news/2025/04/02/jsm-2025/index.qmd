@@ -1,0 +1,10 @@
+---
+title: "JSM 2025 talk accepted"
+date: 2025-04-02
+description: "Parallel Talk. Quantifying causal effects via temporal regression discontinuity designs with time-varying effects has been accepted for a 15-minute presentation at Joint Statistical Meetings 2025 in Nashville."
+categories:
+  - talks
+  - methods
+---
+
+My contributed submission, _"Quantifying Causal Effects via Temporal Regression Discontinuity Designs with Time-Varying Effects,"_ has been accepted for a 15-minute presentation at the Joint Statistical Meetings 2025 in Nashville, Tennessee.

@@ -1,0 +1,11 @@
+---
+title: "Isaac Newton Institute poster presentation"
+date: 2026-01-18
+description: "Poster. Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies at the Foundations of Causal Inference Workshop, Isaac Newton Institute."
+categories:
+  - talks
+  - policing
+  - workshops
+---
+
+I presented a poster at the Foundations of Causal Inference Workshop at the Isaac Newton Institute in Cambridge, United Kingdom, on _"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies."_

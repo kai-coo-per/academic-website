@@ -1,0 +1,10 @@
+---
+title: "Data Science Frontiers workshop announcement"
+date: 2025-10-17
+description: "Workshop. Dean Knox and I will deliver a talk and workshop on applications of the autobounds software at Data Science Frontiers (Society and Politics) in New York."
+categories:
+  - workshops
+  - software
+---
+
+Dean Knox and I will deliver a talk and workshop on applications of the new autobounds software at the Data Science Frontiers (Society and Politics) conference in New York.

@@ -1,0 +1,46 @@
+---
+title: "Learning From Imperfect Identification Strategies"
+#date: In progress
+author:
+  - name: Kai Cooper
+    affiliation: The Wharton School, University of Pennsylvania
+    orcid: 0000-0002-0351-5427
+  - name: Guilherme Duarte
+    affiliation: Department of Government, Harvard University
+    # orcid: ADD-ORCID-HERE
+  - name: Luke Keele
+    affiliation: Perelman School of Medicine, University of Pennsylvania
+    orcid: 0000-0002-3859-2713
+  - name: Dean Knox
+    affiliation: The Wharton School, University of Pennsylvania
+    orcid: 0000-0002-1945-7938
+  - name: Jonathan Mummolo
+    affiliation: School of Public and Internaional Affairs, Princeton University
+    orcid: 0000-0002-5639-3718
+categories:
+  - causal inference
+  - methods
+  - partial identification
+  - software
+pub-info:
+  reference: >-
+    Kai R. D. Cooper, Guilherme Duarte, Luke Keele, Dean Knox, and Jonathan Mummolo. In preparation. "Learning From Imperfect Identification Strategies: Automating Causal Inference When Assumptions Fail."
+  # links:
+  #   - name: Preprint
+  #     url: redlining-covid-atlanta-preprint.pdf
+  #     icon: fa-solid fa-file-pdf
+  #     local: true
+  #   - name: Final version
+  #     url: https://doi.org/ADD-DOI-HERE
+  #     icon: fa-solid fa-scroll
+  #   - name: Add to Zotero
+  #     url: https://www.zotero.org/save?type=doi&q=ADD-DOI-HERE
+  #     icon: ai ai-zotero
+#doi: ADD DOI HERE
+haiku:
+  - "\"Perhaps most importantly, this approach allows for question-driven research\""
+---
+
+# Abstract
+
+Social science has developed an expansive design-based toolkit for causal inference, but the assumptions that undergird standard approaches often fail in applied settings. Recent developments in automated partial identification offer an alternative approach that allows researchers to learn as much as possible in these imperfect settings by easily bounding unidentified quantities of interest while transparently acknowledging limitations of data and design. In this paper, we develop a number of new techniques within this framework, including new approaches for uncertainty quantification, covariate adjustment, extensions to continuous variables, and approaches for interpreting why bounds are narrow or wide. We then replicate and extend published studies covering a range of causal research designs to demonstrate how this approach provides a deeper understanding of the robustness of empirical results, even allowing key assumptions to be falsified in some cases. Finally, we use this approach to update findings in the literature on racial bias in policing, demonstrating the substantive contributions that are possible with this new technology.

@@ -1,0 +1,15 @@
+---
+title: "Kai Cooper's Intuition"
+search: false
+listing:
+  sort: "date desc"
+  feed:
+    title: "Kai Cooper's Intuition"
+    description: "Notes, essays, and posts from Kai Cooper"
+    items: 30
+    type: partial
+    language: en
+  contents:
+    - "intuition/**/index.qmd"
+    - "!intuition/index.qmd"
+---

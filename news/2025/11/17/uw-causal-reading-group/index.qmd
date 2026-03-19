@@ -1,0 +1,10 @@
+---
+title: "University of Washington Causal Reading Group talk"
+date: 2025-11-17
+description: "Talk. Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies at the University of Washington Causal Reading Group."
+categories:
+  - talks
+  - policing
+---
+
+I gave a talk at the University of Washington Causal Reading Group on _"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies."_ The event was held over Zoom.
