@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Kai Cooper&#39;s Intuition</title>
+<link>https://krdcooper.com/rss.html</link>
+<atom:link href="https://krdcooper.com/rss.xml" rel="self" type="application/rss+xml"/>
+<description>Notes, essays, and posts from Kai Cooper</description>
+<language>en</language>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Tue, 17 Mar 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome to Intuition</title>
+  <link>https://krdcooper.com/intuition/2026/03/17/welcome/</link>
+  <description><![CDATA[ A starter post to confirm the section is wired up and ready for new writing. ]]></description>
+  <category>setup</category>
+  <guid>https://krdcooper.com/intuition/2026/03/17/welcome/</guid>
+  <pubDate>Tue, 17 Mar 2026 04:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

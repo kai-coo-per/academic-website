@@ -1,0 +1,49 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/2026/01/18/isaac-newton-institute/index.html",
+      "/news/2025/11/17/uw-causal-reading-group/index.html",
+      "/news/2025/10/17/nyu-2025/index.html",
+      "/news/2025/04/18/ic2s2-2025/index.html",
+      "/news/2025/04/11/acic-2025/index.html",
+      "/news/2025/04/02/jsm-2025/index.html"
+    ]
+  },
+  {
+    "listing": "/talks/index.html",
+    "items": []
+  },
+  {
+    "listing": "/news/index.html",
+    "items": []
+  },
+  {
+    "listing": "/atom.html",
+    "items": [
+      "/intuition/2026/03/17/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/intuition/index.html",
+    "items": []
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/projects/autobounds-imperfect-identification/index.html",
+      "/research/projects/elizabeth-line-air-quality/index.html",
+      "/research/projects/traffic-enforcement-proxies/index.html"
+    ]
+  },
+  {
+    "listing": "/rss.html",
+    "items": [
+      "/intuition/2026/03/17/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching/index.html",
+    "items": []
+  }
+]
