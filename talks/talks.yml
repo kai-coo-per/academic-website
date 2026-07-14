@@ -1,3 +1,12 @@
+- title: "American Causal Inference Conference"
+  date: 2026-05-13
+  description: "Poster title: A Formal Causal Perspective on Outcome Tests for Discrimination"
+  location: Salt Lake City, Utah
+
+- title: "American Causal Inference Conference"
+  date: 2026-05-13
+  description: "Talk title: Monitoring Racial Bias in Traffic Enforcement Using Noisy Proxies of Driver Behavior"
+
 - title: "Foundations of Causal Inference Workshop, Isaac Newton Institute"
   date: 2026-01-18
   description: "Poster title: Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies"
