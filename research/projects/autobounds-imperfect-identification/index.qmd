@@ -24,7 +24,9 @@ categories:
   - software
 pub-info:
   reference: >-
-    Kai R. D. Cooper, Guilherme Duarte, Luke Keele, Dean Knox, and Jonathan Mummolo. In preparation. "Learning From Imperfect Identification Strategies: Automating Causal Inference When Assumptions Fail."
+    Kai R. D. Cooper, Guilherme Duarte, Luke Keele, Dean Knox, and Jonathan Mummolo. In preparation. "Learning From Imperfect Identification Strategies: Automating Causal Inference When Assumptions Fail.
+    <em> Submitted to the American Journal of Political Science. </em> (2026)
+    "
   # links:
   #   - name: Preprint
   #     url: redlining-covid-atlanta-preprint.pdf
