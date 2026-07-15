@@ -18,12 +18,15 @@
     ]
   },
   {
-    "listing": "/intuition/index.html",
-    "items": []
+    "listing": "/atom.html",
+    "items": [
+      "/intuition/2026/03/17/welcome/index.html"
+    ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/news/2026/05/14/index.html",
       "/news/2026/01/18/isaac-newton-institute/index.html",
       "/news/2025/11/17/uw-causal-reading-group/index.html",
       "/news/2025/10/17/nyu-2025/index.html",
@@ -33,10 +36,8 @@
     ]
   },
   {
-    "listing": "/atom.html",
-    "items": [
-      "/intuition/2026/03/17/welcome/index.html"
-    ]
+    "listing": "/intuition/index.html",
+    "items": []
   },
   {
     "listing": "/news/index.html",
