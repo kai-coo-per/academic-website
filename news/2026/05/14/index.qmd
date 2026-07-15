@@ -1,10 +1,13 @@
 ---
 title: "Tom Ten Have Award"
 date: 2026-05-14
-description: "Award. A Formal Causal Perspective on Outcome Tests for Discrimination."
+description: "Winner. Poster: A Formal Causal Perspective on Outcome Tests for Discrimination."
 categories:
   - awards
   - policing
+  - fairness
+  - discirmination
+  - methodology
 ---
 
 Winner of the 2026 edition of the Tom Ten Have Award for the best poster presented at ACIC. I am thankful to the judges and all those who came by to chat about the work.
