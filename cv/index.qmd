@@ -5,7 +5,7 @@ date: 2025-03-17
 title-block-banner: "#771C6D"
 published-title: Last updated
 cv:
-  pdf: "KC_CV_Mar2026.pdf"
+  pdf: "KC_CV_Jul2026.pdf"
 ---
 
 ```{=html}
