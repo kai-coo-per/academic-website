@@ -9,8 +9,8 @@ project:
     navigate: true
 
   render:
-    - "*.qmd"
-    - "*.md"
+    - "**/*.qmd"
+    - "**/*.md"
     - "!manuals/"
     - "!manuals/**"
 

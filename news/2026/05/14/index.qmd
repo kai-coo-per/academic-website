@@ -1,6 +1,6 @@
 ---
 title: "Tom Ten Have Award"
-date: 2025-11-17
+date: 2026-05-14
 description: "Award. A Formal Causal Perspective on Outcome Tests for Discrimination."
 categories:
   - awards
