@@ -9,7 +9,7 @@
 <meta name="author" content="Kai Cooper">
 <meta name="description" content="Kai Cooper frontpage.">
 
-<title>Kai Cooper</title>
+<title>Kai Cooper | Kai Cooper – Kai Cooper</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,27 +34,22 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-9de9f6925d305bcf5b7eb9351f368d06.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a02b9a528cce7cb7a45018d87e390e6d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<script src="site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-d059a20e3e4707235c53009154410240.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -76,391 +71,177 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-home-news .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-freeze','listing-bibliography','listing-csl','listing-pagetitle','listing-author-meta','listing-website','listing-format','listing-engines','listing-_quarto-vars','listing-language','listing-title','listing-date','listing-description','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-freeze","listing-bibliography","listing-csl","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-engines","listing-_quarto-vars","listing-language","listing-title","listing-date","listing-description","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-home-news'] = new List('listing-home-news', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background: #CF4446;
-      }
-</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Kai Cooper</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cv/index.html"> 
-<span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./intuition/index.html"> 
-<span class="menu-text">Intuition</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./research/index.html"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./teaching/index.html"> 
-<span class="menu-text">Teaching</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./talks/index.html"> 
-<span class="menu-text">Talks</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="mailto:kaicoop@wharton.upenn.edu"> 
-<span class="menu-text"><iconify-icon inline="" icon="bi:envelope" style="font-size: 1.1em;" aria-label="Icon envelope from bi Iconify.design set." title="E-mail"></iconify-icon></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://www.linkedin.com/in/kaicoop-phd/"> 
-<span class="menu-text"><iconify-icon inline="" icon="bi:linkedin" style="font-size: 1.1em;" aria-label="Icon linkedin from bi Iconify.design set." title="LinkedIn"></iconify-icon></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://bsky.app/profile/kaicoop.bsky.social" rel="me"> 
-<span class="menu-text"><iconify-icon inline="" icon="fa6-brands:bluesky" style="font-size: 1.1em;" aria-label="Icon bluesky from fa6-brands Iconify.design set." title="Bluesky"></iconify-icon></span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default home page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Bio</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Kai Cooper</h1>
+</div>
 
 
 
+<div class="quarto-title-meta column-page">
 
-
-<style>
-.home-profile-photo {
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  object-fit: cover;
-  width: 100%;
-}
-</style>
-<div class="grid">
-<div class="g-col-12 g-col-sm-4">
-<div class="grid" style="--bs-columns: 5; row-gap: 0;">
-  <div class="g-col-1 g-col-sm-0"></div>
-  <div class="g-col-3 g-col-sm-5">
-    <picture>
-      <source media="(max-width: 576px)" srcset="/files/profiles/kai-headshot-square.jpg">
-      <source media="(min-width: 576px)" srcset="/files/profiles/kai-headshot.jpg">
-      <img class="img-fluid home-profile-photo" src="./files/profiles/kai-headshot.jpg" alt="Kai Cooper">
-    </picture>
+    
+  
+    
   </div>
-  <div class="g-col-1 g-col-sm-0"></div>
-</div>
-</div>
-<div class="g-col-12 g-col-sm-8">
-<p>Welcome! I’m Kai, a PhD student in the <a href="https://oid.wharton.upenn.edu">Operations, Information and Decisions Department</a> at <a href="https://www.wharton.upenn.edu/">The Wharton School of the University of Pennsylvania</a>, and an affiliate of the <a href="https://dbei.med.upenn.edu/center-of-excellence/cci/">Centre for Causal Inference</a> at Penn Biostat. I am very fortunate to be advised by <a href="https://dcknox.github.io">Dean Knox</a>.</p>
-<p>I grew up in Birmingham, UK (but support Arsenal FC). Before joining Penn, I earned a master’s degree in mathematics from <a href="https://www.imperial.ac.uk/mathematics/">Imperial College London</a>, including a year studying abroad at the <a href="https://www.epfl.ch/en/">École polytechnique fédérale de Lausanne</a> in Switzerland.</p>
-<p>When not in the office, you’ll usually find me at the cinema, playing badminton, or reading and watching dystopian science fiction.</p>
-</div>
-<section id="research-interests" class="level2 g-col-12">
-<h2 class="anchored" data-anchor-id="research-interests">Research interests</h2>
-<p>I study <strong>causal inference</strong> in theory and application. My research broadly follows two streams: (i) developing partial identification strategies that permit causal inference for social scientific questions in challenging data environments, and (ii) applying modern causal inference techniques to policy evaluation and fairness in social and institutional settings such as police enforcement and education.</p>
-</section>
-<section id="news" class="level2 g-col-12">
-<h2 class="anchored" data-anchor-id="news">News</h2>
-<div id="listing-home-news" class="quarto-listing quarto-listing-container-custom">
-<div class="list blog">
-    
-    <div class="blog-entry" data-index="0" data-categories="YXdhcmRzJTJDcG9saWNpbmclMkNmYWlybmVzcyUyQ2Rpc2Npcm1pbmF0aW9uJTJDbWV0aG9kb2xvZ3k=" data-listing-date-sort="1778731200000" data-listing-file-modified-sort="1784127166944" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
-        <div class="metadata">          
-            <p class="date listing-date">May 14, 2026</p>
-        </div>
-        <div class="body">
-            <p class="title listing-title"><a href="./news/2026/05/14/index.html">Tom Ten Have Award</a></p>
+  
 
-            
-            <div class="post-categories listing-categories">
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('awards'); return false;">
-                    awards
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('policing'); return false;">
-                    policing
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('fairness'); return false;">
-                    fairness
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('discirmination'); return false;">
-                    discirmination
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('methodology'); return false;">
-                    methodology
-                </div>
-                
-            </div>
-            
 
-            <p class="description listing-description">Winner. Poster: A Formal Causal Perspective on Outcome Tests for Discrimination.</p>
-            
-            
-        </div>
-        
+</header>
+
+
+<main class="page-shell home-page">
+  <section class="hero-block">
+    <div class="home-title-row">
+      <h1>Kai Cooper</h1>
+      <nav class="section-nav masthead-nav" aria-label="Primary navigation">
+        <a href="./bio/">Bio</a>
+        <a href="./publications/">Research</a>
+        <a href="./software/">Software</a>
+        <a href="./teaching/">Teaching</a>
+      </nav>
     </div>
-    
-    <div class="blog-entry" data-index="1" data-categories="dGFsa3MlMkNwb2xpY2luZyUyQ3dvcmtzaG9wcw==" data-listing-date-sort="1768712400000" data-listing-file-modified-sort="1784067576095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
-        <div class="metadata">          
-            <p class="date listing-date">Jan 18, 2026</p>
-        </div>
-        <div class="body">
-            <p class="title listing-title"><a href="./news/2026/01/18/isaac-newton-institute/index.html">Isaac Newton Institute poster presentation</a></p>
 
-            
-            <div class="post-categories listing-categories">
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('talks'); return false;">
-                    talks
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('policing'); return false;">
-                    policing
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('workshops'); return false;">
-                    workshops
-                </div>
-                
-            </div>
-            
+    <div class="hero-intro">
+      <div class="hero-copy">
+        <p class="positioning">Welcome! I am a PhD student in <a href="https://oid.wharton.upenn.edu">Operations, Information and Decisions</a> at <a href="https://www.wharton.upenn.edu">The Wharton School</a> of the University of Pennsylvania, and an affiliate of the <a href="https://dbei.med.upenn.edu/center-of-excellence/cci/">Centre for Causal Inference</a> in Penn Biostat. I study causal methodology for understanding social inequity from observational data.</p>
 
-            <p class="description listing-description">Poster. Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies at the Foundations of Causal Inference Workshop, Isaac Newton Institute.</p>
-            
-            
+        <div class="text-actions" aria-label="Key links">
+          <!-- <a href="/assets/files/KC_CV_Jul2026.pdf">CV</a> -->
+          <!-- <a href="https://oid.wharton.upenn.edu/profile/kaicoop/">Department site</a>  -->
+          <a>Email: kaicoop [at] wharton [dot] upenn [dot] edu</a>
         </div>
-        
+      </div>
+      <figure class="hero-portrait figure">
+        <img src="./assets/images/kai-headshot.jpg" alt="Kai Cooper" class="figure-img">
+      </figure>
     </div>
-    
-    <div class="blog-entry" data-index="2" data-categories="dGFsa3MlMkNwb2xpY2luZw==" data-listing-date-sort="1763355600000" data-listing-file-modified-sort="1784067576094" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
-        <div class="metadata">          
-            <p class="date listing-date">Nov 17, 2025</p>
-        </div>
-        <div class="body">
-            <p class="title listing-title"><a href="./news/2025/11/17/uw-causal-reading-group/index.html">University of Washington Causal Reading Group talk</a></p>
+  </section>
 
-            
-            <div class="post-categories listing-categories">
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('talks'); return false;">
-                    talks
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('policing'); return false;">
-                    policing
-                </div>
-                
-            </div>
-            
-
-            <p class="description listing-description">Talk. Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies at the University of Washington Causal Reading Group.</p>
-            
-            
-        </div>
-        
+  <section class="ruled-section working-papers-section">
+    <h2 class="anchored">Selected Working Papers</h2>
+    <div class="research-grid">
+      <a class="paper-card" href="./publications/#a-principled-approach-to-benchmarking-in-studies-of-racial-discrimination">
+        <h3 class="anchored">Monitoring Racial Bias in Traffic Enforcement with Noisy Proxies of Driver Behavior</h3>
+        <p class="meta">In preparation</p>
+        <p>Develops the first formal causal framework for benchmarking analyses in the study of discrimination.</p>
+      </a>
+      <a class="paper-card" href="./publications/#did-the-elizabeth-line-improve-air-quality-in-london">
+        <h3 class="anchored">Outcome Tests.</h3>
+        <p class="meta">IN PREPARATION</p>
+        <p>Reassesses the econometric outcome test through a graphical causal lens and offers new avenues forward.</p>
+      </a>
+      <a class="paper-card" href="./publications/#learning-from-imperfect-identification-strategies">
+        <h3 class="anchored">Learning From Imperfect Research Designs: Automating Causal Inference When Classic Assumptions Fail</h3>
+        <p class="meta">Submitted, 2026</p>
+        <p>Showcases automated partial identification tools for causal inference classic assumptions in standard applied research designs are challenged.</p>
+      </a>
+      
     </div>
-    
-    <div class="blog-entry" data-index="3" data-categories="d29ya3Nob3BzJTJDc29mdHdhcmU=" data-listing-date-sort="1760673600000" data-listing-file-modified-sort="1784067576094" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
-        <div class="metadata">          
-            <p class="date listing-date">Oct 17, 2025</p>
-        </div>
-        <div class="body">
-            <p class="title listing-title"><a href="./news/2025/10/17/nyu-2025/index.html">Data Science Frontiers workshop announcement</a></p>
+  </section>
 
-            
-            <div class="post-categories listing-categories">
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('workshops'); return false;">
-                    workshops
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('software'); return false;">
-                    software
-                </div>
-                
-            </div>
-            
+  <section class="home-bottom-split" aria-label="Recent talks and awards">
+    <div class="recent-talks-panel">
+      <h2 class="anchored">Recent Presentations</h2>
+      <div class="talks-scroll" tabindex="0" aria-label="Scrollable list of recent talks">
+        <article class="talk-item">
+          <div class="talk-heading"><h3 class="anchored">PolMeth, MSU</h3><time datetime="2026-07">July 2026</time></div>
+          <p> <strong>Topic:</strong> Benchmarking racial bias using causal proxies (talk).<br>Outcome tests (poster).
+        </p></article>
 
-            <p class="description listing-description">Workshop. Dean Knox and I will deliver a talk and workshop on applications of the autobounds software at Data Science Frontiers (Society and Politics) in New York.</p>
-            
-            
-        </div>
-        
+        <article class="talk-item">
+          <div class="talk-heading"><h3 class="anchored">ACIC, Salt Lake City</h3><time datetime="2026-05">May 2026</time></div>
+          <p> <strong>Topic:</strong> Benchmarking racial bias using causal proxies (talk).<br>Outcome tests (poster).
+        </p></article>
+
+        <article class="talk-item">
+          <div class="talk-heading"><h3 class="anchored">Isaac Newton Institute</h3><time datetime="2026-01">Jan 2026</time></div>
+          <p> <strong>Topic:</strong> Benchmarking racial bias using causal proxies<br>Poster at the Foundations of Causal Inference Workshop in<br>Cambridge, UK</p>
+        </article>
+
+        <article class="talk-item">
+          <div class="talk-heading"><h3 class="anchored">UW Causal Reading Group (online)</h3><time datetime="2025-11">Nov 2025</time></div>
+          <p><strong>Topic:</strong> Benchmarking racial bias using causal proxies</p>
+        </article>
+        <article class="talk-item">
+          <div class="talk-heading"><h3 class="anchored">Data Science Frontiers, NYU</h3><time datetime="2025-10">Oct 2025</time></div>
+          <p><strong>Topic:</strong> autobounds lecture and workshop</p>
+        </article>
+        <article class="talk-item">
+          <div class="talk-heading"><h3 class="anchored">Joint Statistical Meetings, Nashville</h3><time datetime="2025-08">Aug 2025</time></div>
+          <p><strong>Topic:</strong> Lizzy Line effects on air quality</p>
+        </article>
+        <article class="talk-item">
+          <div class="talk-heading"><h3 class="anchored">IC2S2</h3><time datetime="2025-07">Jul 2025</time></div>
+          <p><strong>Topic:</strong> Benchmarking racial bias using causal proxies</p>
+        </article>
+        <article class="talk-item">
+          <div class="talk-heading"><h3 class="anchored">ACIC, Detroit</h3><time datetime="2025-05">May 2025</time></div>
+          <p><strong>Topic:</strong> Benchmarking racial bias using causal proxies (poster)</p>
+        </article>
+        <article class="talk-item">
+          <div class="talk-heading"><h3 class="anchored">Joint Statistical Meetings, Portland</h3><time datetime="2024-08">Aug 2024</time></div>
+          <p><strong>Topic:</strong> Statistical challenges in the analysis of police use of force.</p>
+        </article>
+      </div>
     </div>
-    
-    <div class="blog-entry" data-index="4" data-categories="dGFsa3MlMkNwb2xpY2luZw==" data-listing-date-sort="1744948800000" data-listing-file-modified-sort="1784067576094" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
-        <div class="metadata">          
-            <p class="date listing-date">Apr 18, 2025</p>
-        </div>
-        <div class="body">
-            <p class="title listing-title"><a href="./news/2025/04/18/ic2s2-2025/index.html">IC2S2 2025 parallel talk accepted</a></p>
 
-            
-            <div class="post-categories listing-categories">
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('talks'); return false;">
-                    talks
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('policing'); return false;">
-                    policing
-                </div>
-                
-            </div>
-            
-
-            <p class="description listing-description">Parallel Talk. Using causal inference to unmask racial discrimination in traffic enforcement via proxies has been accepted for IC2S2 2025 in Norrkoping, Sweden.</p>
-            
-            
-        </div>
-        
+    <div class="awards-panel">
+      <h2 class="anchored">Awards and Grants</h2>
+      <div class="award-list">
+        <article class="award-item">
+          <h3 class="anchored">Tom Ten Have Award</h3>
+          <p><span>Best Poster, ACIC Salt Lake</span><span>2026</span></p>
+        </article>
+        <article class="award-item">
+          <h3 class="anchored">PolMeth Best Poster</h3>
+          <p><span>Best Poster (Methods), PolMeth MSU</span><span>2026</span></p>
+        </article>
+        <article class="award-item">
+          <h3 class="anchored">John T. Williams Prize</h3>
+          <p><span>Best dissertation proposal in political methodology</span><span>2026</span></p>
+        </article>
+        <article class="award-item">
+          <h3 class="anchored">AI &amp; Analytics Grant</h3>
+          <p><span> $7,500 award from Wharton AI &amp; Analytics Initiative to study bias in AI decisions</span><span>2026</span></p>
+        </article>
+      </div>
     </div>
-    
-    <div class="blog-entry" data-index="5" data-categories="dGFsa3MlMkNwb2xpY2luZw==" data-listing-date-sort="1744344000000" data-listing-file-modified-sort="1784067576094" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
-        <div class="metadata">          
-            <p class="date listing-date">Apr 11, 2025</p>
-        </div>
-        <div class="body">
-            <p class="title listing-title"><a href="./news/2025/04/11/acic-2025/index.html">ACIC 2025 poster accepted</a></p>
+  </section>
+</main>
 
-            
-            <div class="post-categories listing-categories">
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('talks'); return false;">
-                    talks
-                </div>
-                
-                <div class="post-category listing-category" onclick="window.quartoListingCategory('policing'); return false;">
-                    policing
-                </div>
-                
-            </div>
-            
-
-            <p class="description listing-description">Poster Presentation. Using causal inference to unmask racial discrimination in traffic enforcement via proxies has been accepted for ACIC 2025 in Detroit.</p>
-            
-            
-        </div>
-        
-    </div>
-    
+<footer class="site-footer">
+  <div class="simple-footer">
+    <div class="footer-identity">
+      <h2 class="anchored"><a class="footer-title" href="./">Kai Reis Darius Cooper</a></h2>
+      <div class="social-links" aria-label="Contact and social links">
+  <a href="mailto:kaicoop@wharton.upenn.edu" aria-label="Email" title="Email"><svg viewbox="0 0 16 16" aria-hidden="true"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.878L9.326 8.79 8 9.583 6.674 8.79l-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739M1 11.105l4.708-2.897L1 5.383z"></path></svg></a>
+  <a href="https://orcid.org/0000-0002-0351-5427" aria-label="ORCID" title="ORCID"><svg viewbox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.2"></circle><text x="8" y="10.5" text-anchor="middle" font-size="6.4" font-family="Arial, sans-serif" font-weight="700" fill="currentColor">iD</text></svg></a>
+  <a href="https://www.linkedin.com/in/kaicoop-phd/" aria-label="LinkedIn" title="LinkedIn"><svg viewbox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708C16 15.487 15.474 16 14.825 16H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.225 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.251c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5 5 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></a>
+  <a href="https://bsky.app/profile/kaicoop.bsky.social" aria-label="Bluesky" title="Bluesky"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M12 10.8C10.913 8.686 7.954 4.747 5.202 2.805 2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364-4.67.69-8.82 2.39-3.38 8.45 5.98 6.37 8.44-1.61 8.44-5.98 0-.634-.137-1.803-.9-2.147-.66-.298-1.665-.62-4.3 1.24C16.046 4.747 13.087 8.686 12 10.8Z"></path></svg></a>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p><a href="./news/">All news</a></p>
-</section>
-</div>
-
+    </div>
+    <div class="footer-bottom-row">
+      <p>© 2025–2026 Kai Cooper</p>
+      <p>PhD Student at The Wharton School, University of Pennsylvania</p>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -866,19 +647,6 @@ window.Quarto = {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p><span class="faux-block"><i class="fa-regular fa-copyright" aria-label="copyright"></i> 2025–2026 Kai Cooper</span> <span class="faux-block">PhD student, Operations, Information and Decisions, The Wharton School.</span></p>
-</div>   
-    <div class="nav-footer-center">
-<p><span class="faux-block"><i class="fa-brands fa-orcid" aria-label="orcid"></i> <strong>ORCID</strong> <a href="https://orcid.org/0000-0002-0351-5427">0000-0002-0351-5427</a></span></p>
-</div>
-    <div class="nav-footer-right">
-<p><span class="faux-block">Built with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a></span> <span class="faux-block"><a href="https://github.com/andrewheiss/ath-quarto">View Andrew Heiss’s source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></span></p>
-</div>
-  </div>
-</footer>
 
 
 
