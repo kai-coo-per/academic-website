@@ -56,11 +56,60 @@
     "text": "Restored the wide Bio two-column geometry by overriding Quarto’s generic aside grid placement on .bio-sidebar. Quarto applies grid-column: body-end / page-end !important to generic &lt;aside&gt; elements; this was creating implicit columns and collapsing the Bio copy width.\nStandardized the desktop outer gutter to 56px per side for the masthead, page shell, publications wrapper, and footer contents (subject to the 1424px maximum content width).\nRetained the smaller responsive gutters at tablet/mobile breakpoints.\nVerified at a 1394px viewport that Home, Bio, Publications, Software, Teaching, and footer contents all run from x=56px to x=1338px."
   },
   {
+    "objectID": "news/2026/01/18/isaac-newton-institute/index.html",
+    "href": "news/2026/01/18/isaac-newton-institute/index.html",
+    "title": "Isaac Newton Institute poster presentation",
+    "section": "",
+    "text": "I presented a poster at the Foundations of Causal Inference Workshop at the Isaac Newton Institute in Cambridge, United Kingdom, on “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies.”"
+  },
+  {
+    "objectID": "news/index.html",
+    "href": "news/index.html",
+    "title": "News",
+    "section": "",
+    "text": "Recent updates, talks, presentations, and workshop announcements.\n\n\n    \n\nNo matching items"
+  },
+  {
+    "objectID": "news/2025/11/17/uw-causal-reading-group/index.html",
+    "href": "news/2025/11/17/uw-causal-reading-group/index.html",
+    "title": "University of Washington Causal Reading Group talk",
+    "section": "",
+    "text": "I gave a talk at the University of Washington Causal Reading Group on “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies.” The event was held over Zoom."
+  },
+  {
+    "objectID": "news/2025/04/18/ic2s2-2025/index.html",
+    "href": "news/2025/04/18/ic2s2-2025/index.html",
+    "title": "IC2S2 2025 parallel talk accepted",
+    "section": "",
+    "text": "My work, “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies,” has been accepted for a parallel talk at the International Computational Social Science Conference (IC2S2) 2025 in Norrkoping, Sweden."
+  },
+  {
     "objectID": "software/index.html",
     "href": "software/index.html",
     "title": "Software",
     "section": "",
     "text": "Kai Cooper\n  \n    Bio\n    Research\n    Software\n    Teaching\n  \n\n\n\n  \n    Software\n  \n\n  \n    \n      \n    \n\n    \n      autobounds\n      Automated partial identification for causal inference\n      Computes bounds on causal effects in discrete settings when standard identifying assumptions are unavailable, incomplete, or violated.\n\n      \n        GitHub\n        Theory paper\n        Applied paper (coming soon)\n      \n    \n  \n\n\n\n  \n    \n      Kai Reis Darius Cooper\n      \n  \n  iD\n  \n  \n\n    \n    \n      © 2025–2026 Kai Cooper\n      PhD Student at The Wharton School, University of Pennsylvania"
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "13 May, 2026\n        \n        \n            American Causal Inference Conference\n            Poster title: A Formal Causal Perspective on Outcome Tests for Discrimination | Salt Lake City, Utah\n\n            \n            \n        \n    \n    \n    \n                  \n            13 May, 2026\n        \n        \n            American Causal Inference Conference\n            Talk title: Monitoring Racial Bias in Traffic Enforcement Using Noisy Proxies of Driver Behavior | Salt Lake City, Utah\n\n            \n            \n        \n    \n    \n    \n                  \n            18 January, 2026\n        \n        \n            Foundations of Causal Inference Workshop, Isaac Newton Institute\n            Poster title: Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies | Cambridge, United Kingdom\n\n            \n            \n        \n    \n    \n    \n                  \n            17 November, 2025\n        \n        \n            University of Washington Causal Reading Group\n            Talk title: \"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies\". | Seattle, Washington (Zoom)\n\n            \n            \n        \n    \n    \n    \n                  \n            24 July, 2025\n        \n        \n            11th International Conference on Computational Social Science (IC2S2)\n            Talk title: \"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies\". Parallel Talk. | Norrkoping, Sweden\n\n            \n            \n        \n    \n    \n    \n                  \n            11 April, 2025\n        \n        \n            American Causal Inference Conference (ACIC 2025)\n            Poster title: \"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies\". | Detroit, Michigan\n\n            \n            \n        \n    \n    \n    \n                  \n            2 April, 2025\n        \n        \n            Joint Statistical Meetings 2025\n            Contributed talk title: \"Quantifying Causal Effects via Temporal Regression Discontinuity Designs with Time-Varying Effects\". 15-minute presentation. | Nashville, Tennessee\n\n            \n            \n        \n    \n    \n\nNo matching items"
+  },
+  {
+    "objectID": "talks/index.html#presentations",
+    "href": "talks/index.html#presentations",
+    "title": "Talks",
+    "section": "",
+    "text": "13 May, 2026\n        \n        \n            American Causal Inference Conference\n            Poster title: A Formal Causal Perspective on Outcome Tests for Discrimination | Salt Lake City, Utah\n\n            \n            \n        \n    \n    \n    \n                  \n            13 May, 2026\n        \n        \n            American Causal Inference Conference\n            Talk title: Monitoring Racial Bias in Traffic Enforcement Using Noisy Proxies of Driver Behavior | Salt Lake City, Utah\n\n            \n            \n        \n    \n    \n    \n                  \n            18 January, 2026\n        \n        \n            Foundations of Causal Inference Workshop, Isaac Newton Institute\n            Poster title: Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies | Cambridge, United Kingdom\n\n            \n            \n        \n    \n    \n    \n                  \n            17 November, 2025\n        \n        \n            University of Washington Causal Reading Group\n            Talk title: \"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies\". | Seattle, Washington (Zoom)\n\n            \n            \n        \n    \n    \n    \n                  \n            24 July, 2025\n        \n        \n            11th International Conference on Computational Social Science (IC2S2)\n            Talk title: \"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies\". Parallel Talk. | Norrkoping, Sweden\n\n            \n            \n        \n    \n    \n    \n                  \n            11 April, 2025\n        \n        \n            American Causal Inference Conference (ACIC 2025)\n            Poster title: \"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies\". | Detroit, Michigan\n\n            \n            \n        \n    \n    \n    \n                  \n            2 April, 2025\n        \n        \n            Joint Statistical Meetings 2025\n            Contributed talk title: \"Quantifying Causal Effects via Temporal Regression Discontinuity Designs with Time-Varying Effects\". 15-minute presentation. | Nashville, Tennessee\n\n            \n            \n        \n    \n    \n\nNo matching items"
+  },
+  {
+    "objectID": "talks/index.html#workshops",
+    "href": "talks/index.html#workshops",
+    "title": "Talks",
+    "section": "Workshops",
+    "text": "Workshops\n\n\n\n    \n    \n                  \n            17 October, 2025\n        \n        \n            Learning From Imperfect Research Designs: Automating Causal Inference When Classic Assumptions Fail\n            Demonstration of autobounds software with methodological talk and interactive coding demonstration at Data Science Frontiers (Society and Politics) Conference at NYU | New York, New York\n\n            \n            \n        \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "publications/index.html",
@@ -81,7 +130,35 @@
     "href": "index.html",
     "title": "Kai Cooper",
     "section": "",
-    "text": "Kai Cooper\n      \n        Bio\n        Research\n        Software\n        Teaching\n      \n    \n\n    \n      \n        Welcome! I am a PhD student in Operations, Information and Decisions at The Wharton School of the University of Pennsylvania, and an affiliate of the Centre for Causal Inference in Penn Biostat. I study causal methodology for understanding social inequity from observational data.\n\n        \n          \n          \n          Email: kaicoop [at] wharton [dot] upenn [dot] edu\n        \n      \n      \n        \n      \n    \n  \n\n  \n    Selected Working Papers\n    \n      \n        Monitoring Racial Bias in Traffic Enforcement with Noisy Proxies of Driver Behavior\n        In preparation\n        Develops the first formal causal framework for benchmarking analyses in the study of discrimination.\n      \n      \n        Outcome Tests.\n        IN PREPARATION\n        Reassesses the econometric outcome test through a graphical causal lens and offers new avenues forward.\n      \n      \n        Learning From Imperfect Research Designs: Automating Causal Inference When Classic Assumptions Fail\n        Submitted, 2026\n        Showcases automated partial identification tools for causal inference classic assumptions in standard applied research designs are challenged.\n      \n      \n    \n  \n\n  \n    \n      Recent Presentations\n      \n        \n          PolMeth, MSUJuly 2026\n           Topic: Benchmarking racial bias using causal proxies (talk).Outcome tests (poster).\n        \n\n        \n          ACIC, Salt Lake CityMay 2026\n           Topic: Benchmarking racial bias using causal proxies (talk).Outcome tests (poster).\n        \n\n        \n          Isaac Newton InstituteJan 2026\n           Topic: Benchmarking racial bias using causal proxiesPoster at the Foundations of Causal Inference Workshop inCambridge, UK\n        \n\n        \n          UW Causal Reading Group (online)Nov 2025\n          Topic: Benchmarking racial bias using causal proxies\n        \n        \n          Data Science Frontiers, NYUOct 2025\n          Topic: autobounds lecture and workshop\n        \n        \n          Joint Statistical Meetings, NashvilleAug 2025\n          Topic: Lizzy Line effects on air quality\n        \n        \n          IC2S2Jul 2025\n          Topic: Benchmarking racial bias using causal proxies\n        \n        \n          ACIC, DetroitMay 2025\n          Topic: Benchmarking racial bias using causal proxies (poster)\n        \n        \n          Joint Statistical Meetings, PortlandAug 2024\n          Topic: Statistical challenges in the analysis of police use of force.\n        \n      \n    \n\n    \n      Awards and Grants\n      \n        \n          Tom Ten Have Award\n          Best Poster, ACIC Salt Lake2026\n        \n        \n          PolMeth Best Poster\n          Best Poster (Methods), PolMeth MSU2026\n        \n        \n          John T. Williams Prize\n          Best dissertation proposal in political methodology2026\n        \n        \n          AI & Analytics Grant\n           $7,500 award from Wharton AI & Analytics Initiative to study bias in AI decisions2026\n        \n      \n    \n  \n\n\n\n  \n    \n      Kai Reis Darius Cooper\n      \n  \n  iD\n  \n  \n\n    \n    \n      © 2025–2026 Kai Cooper\n      PhD Student at The Wharton School, University of Pennsylvania"
+    "text": "Kai Cooper\n      \n        Bio\n        Research\n        Software\n        Teaching\n      \n    \n\n    \n      \n        Welcome! I am a PhD candidate in Operations, Information and Decisions at The Wharton School of the University of Pennsylvania, and an affiliate of the Centre for Causal Inference in Penn Biostatistics. I study causal methodology for understanding social inequity from observational data.\n\n        \n          \n          \n          Email: kaicoop [at] wharton [dot] upenn [dot] edu\n        \n      \n      \n        \n      \n    \n  \n\n  \n    Selected Working Papers\n    \n      \n        Monitoring Racial Bias in Traffic Enforcement with Noisy Proxies of Driver Behavior\n        In preparation\n        Develops the first formal causal framework for benchmarking analyses in the study of discrimination.\n      \n      \n        Outcome Tests.\n        IN PREPARATION\n        Reassesses the econometric outcome test through a graphical causal lens and offers new avenues forward.\n      \n      \n        Learning From Imperfect Research Designs: Automating Causal Inference When Classic Assumptions Fail\n        Submitted, 2026\n        Showcases automated partial identification tools for causal inference classic assumptions in standard applied research designs are challenged.\n      \n      \n    \n  \n\n  \n    \n      Recent Presentations\n      \n        \n          PolMeth, MSUJuly 2026\n           Topic: Benchmarking racial bias using causal proxies (talk).Outcome tests (poster).\n        \n\n        \n          ACIC, Salt Lake CityMay 2026\n           Topic: Benchmarking racial bias using causal proxies (talk).Outcome tests (poster).\n        \n\n        \n          Isaac Newton InstituteJan 2026\n           Topic: Benchmarking racial bias using causal proxiesPoster at the Foundations of Causal Inference Workshop inCambridge, UK\n        \n\n        \n          UW Causal Reading Group (online)Nov 2025\n          Topic: Benchmarking racial bias using causal proxies\n        \n        \n          Data Science Frontiers, NYUOct 2025\n          Topic: autobounds lecture and workshop\n        \n        \n          Joint Statistical Meetings, NashvilleAug 2025\n          Topic: Lizzy Line effects on air quality\n        \n        \n          IC2S2Jul 2025\n          Topic: Benchmarking racial bias using causal proxies\n        \n        \n          ACIC, DetroitMay 2025\n          Topic: Benchmarking racial bias using causal proxies (poster)\n        \n        \n          Joint Statistical Meetings, PortlandAug 2024\n          Topic: Statistical challenges in the analysis of police use of force.\n        \n      \n    \n\n    \n      Awards and Grants\n      \n        \n          Tom Ten Have Award\n          Best Poster, ACIC Salt Lake2026\n        \n        \n          PolMeth Best Poster\n          Best Poster (Methods), PolMeth MSU2026\n        \n        \n          John T. Williams Prize\n          Best dissertation proposal in political methodology2026\n        \n        \n          AI & Analytics Grant\n           $7,500 award from Wharton AI & Analytics Initiative to study bias in AI decisions2026\n        \n      \n    \n  \n\n\n\n  \n    \n      Kai Reis Darius Cooper\n      \n  \n  iD\n  \n  \n\n    \n    \n      © 2025–2026 Kai Cooper\n      PhD Student at The Wharton School, University of Pennsylvania"
+  },
+  {
+    "objectID": "news/2025/04/02/jsm-2025/index.html",
+    "href": "news/2025/04/02/jsm-2025/index.html",
+    "title": "JSM 2025 talk accepted",
+    "section": "",
+    "text": "My contributed submission, “Quantifying Causal Effects via Temporal Regression Discontinuity Designs with Time-Varying Effects,” has been accepted for a 15-minute presentation at the Joint Statistical Meetings 2025 in Nashville, Tennessee."
+  },
+  {
+    "objectID": "news/2025/04/11/acic-2025/index.html",
+    "href": "news/2025/04/11/acic-2025/index.html",
+    "title": "ACIC 2025 poster accepted",
+    "section": "",
+    "text": "My poster, “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies,” has been accepted for presentation at ACIC 2025 in Detroit."
+  },
+  {
+    "objectID": "news/2025/10/17/nyu-2025/index.html",
+    "href": "news/2025/10/17/nyu-2025/index.html",
+    "title": "Data Science Frontiers workshop announcement",
+    "section": "",
+    "text": "Dean Knox and I will deliver a talk and workshop on applications of the new autobounds software at the Data Science Frontiers (Society and Politics) conference in New York."
+  },
+  {
+    "objectID": "news/2026/05/14/index.html",
+    "href": "news/2026/05/14/index.html",
+    "title": "Tom Ten Have Award",
+    "section": "",
+    "text": "Winner of the 2026 edition of the Tom Ten Have Award for the best poster presented at ACIC. I am thankful to the judges and all those who came by to chat about the work."
   },
   {
     "objectID": "teaching/index.html",
