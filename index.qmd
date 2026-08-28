@@ -47,7 +47,7 @@ description-meta: "Kai Cooper frontpage."
       </a>
       <a class="paper-card" href="/publications/#learning-from-imperfect-identification-strategies">
         <h3>Learning From Imperfect Research Designs: Automating Causal Inference When Classic Assumptions Fail</h3>
-        <p class="meta">Submitted, 2026</p>
+        <p class="meta">R&R at AJPS</p>
         <p>Showcases automated partial identification tools for causal inference classic assumptions in standard applied research designs are challenged.</p>
       </a>
       
