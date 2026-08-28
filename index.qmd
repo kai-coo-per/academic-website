@@ -37,7 +37,7 @@ description-meta: "Kai Cooper frontpage."
     <div class="research-grid">
       <a class="paper-card" href="/publications/#a-principled-approach-to-benchmarking-in-studies-of-racial-discrimination">
         <h3>Monitoring Racial Bias in Traffic Enforcement with Noisy Proxies of Driver Behavior</h3>
-        <p class="meta">In preparation</p>
+        <p class="meta">IN PREPARATION</p>
         <p>Develops the first formal causal framework for benchmarking analyses in the study of discrimination.</p>
       </a>
       <a class="paper-card" href="/publications/#did-the-elizabeth-line-improve-air-quality-in-london">
@@ -47,7 +47,7 @@ description-meta: "Kai Cooper frontpage."
       </a>
       <a class="paper-card" href="/publications/#learning-from-imperfect-identification-strategies">
         <h3>Learning From Imperfect Research Designs: Automating Causal Inference When Classic Assumptions Fail</h3>
-        <p class="meta">R&R at AJPS</p>
+        <p class="meta">R&amp;R at AJPS</p>
         <p>Showcases automated partial identification tools for causal inference classic assumptions in standard applied research designs are challenged.</p>
       </a>
       

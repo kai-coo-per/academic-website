@@ -21,7 +21,7 @@ title: "Publications"
   <div class="publications-layout">
     <div class="publication-list">
       <section id="working-papers" class="publication-section">
-        <h2>WORKING PAPERS</h2>
+        <h2>IN PROGRESS</h2>
 
         <article id="a-principled-approach-to-benchmarking-in-studies-of-racial-discrimination" class="publication-item">
           <h3>Monitoring Racial Bias in Traffic Enforcement with Noisy Proxies of Driver Behavior</h3>
@@ -38,6 +38,7 @@ title: "Publications"
           <h3>Outcome Tests.</h3>
           <p class="publication-authors">Kai R. D. Cooper</p>
           <p class="publication-status">IN PREPARATION</p>
+          <p class="publication-authors">Winner: Tom Ten Have Award, ACIC 2026; Best Poster (Methods), Polmeth 2026</p>
           <!-- <p class="publication-links"><a href="/research/projects/traffic-enforcement-proxies/foundations_of_causal_poster-5.pdf">Poster</a></p> -->
           <!-- <details class="abstract">
             <summary>Abstract</summary>
@@ -60,7 +61,7 @@ title: "Publications"
         <article id="learning-from-imperfect-identification-strategies" class="publication-item">
           <h3>Learning From Imperfect Research Designs: Automating Causal Inference When Classic Assumptions Fail</h3>
           <p class="publication-authors">Kai R. D. Cooper, Guilherme Duarte, Luke Keele, Dean Knox, and Jonathan Mummolo</p>
-          <p class="publication-status">REVISE & RESUBMIT TO THE AMERICAN JOURNAL OF POLITICAL SCIENCE (2026)</p>
+          <p class="publication-status">REVISE &amp; RESUBMIT TO THE AMERICAN JOURNAL OF POLITICAL SCIENCE (2026)</p>
           <details class="abstract">
             <summary>Abstract</summary>
             <p>Social science has developed an expansive design-based toolkit for causal inference, but key assumptions often fail in real-world settings. Partial identification offers an alternative: researchers can learn as much as possible through sharp bounds while transparently acknowledging limitations of data and design. We propose methodological improvements to automated partial identification that make it viable for applied social-science research, including new approaches for quantifying uncertainty, adjusting for covariates, handling continuous variables, assessing the consequences of relaxing or falsifying assumptions, and interpreting why bounds are narrow or wide. We then replicate and extend published studies spanning several causal designs to show how these advances deepen our understanding of empirical robustness. In some applications, implausible assumptions directly drive key causal claims; in another, they are inconsistent with observed data. Among other results, we present updated findings on counterinsurgency violence, voter habit formation, and racial bias in policing.</p>
