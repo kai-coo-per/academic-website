@@ -83,8 +83,8 @@ title: "Teaching"
 </div>
     </div>
     <div class="footer-bottom-row">
-      <p>© 2025–2026 Kai Cooper</p>
-      <p>PhD Student at The Wharton School, University of Pennsylvania</p>
+      <p>© 2025–2026 Kai Cooper, inspired by <a href="https://www.mitsurumukaigawara.com">Mitsuru Mukaigawara</a></p>
+      <p>PhD Candidate at The Wharton School, University of Pennsylvania</p>
     </div>
   </div>
 </footer>

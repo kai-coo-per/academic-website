@@ -1419,8 +1419,8 @@ main.page-shell .bio-layout > aside.bio-sidebar {
 
 /* Keep the simplified footer substantial without changing its content layout. */
 .simple-footer {
-  min-height: 430px;
-  padding-top: 96px;
+  min-height: 390px;
+  padding-top: 56px;
   padding-bottom: 68px;
 }
 
@@ -1778,6 +1778,10 @@ main.content.page-columns.page-full > .site-footer {
   .home-title-row {
     grid-template-columns: 1fr;
     align-items: start;
+  }
+
+  .home-page .home-title-row {
+    border-bottom: 0;
   }
 
   .home-title-row .masthead-nav {
