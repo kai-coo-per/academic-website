@@ -27,7 +27,7 @@ description-meta: "Kai Cooper frontpage."
         </div>
       </div>
       <figure class="hero-portrait">
-        <img src="/assets/images/kai-headshot.jpg" alt="Kai Cooper">
+        <img src="/assets/images/headshot-Sep2026-cropped.jpeg" alt="Kai Cooper">
       </figure>
     </div>
   </section>
