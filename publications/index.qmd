@@ -27,6 +27,7 @@ title: "Publications"
           <h3>Monitoring Racial Bias in Traffic Enforcement with Noisy Proxies of Driver Behavior</h3>
           <p class="publication-authors">Kai R. D. Cooper, Gregory Lanzalotto, Haosen Ge, Jacob Kaplan, Scott Desposato, Dean Knox, and Jonathan Mummolo</p>
           <p class="publication-status">IN PREPARATION</p>
+          <p class="publication-links"><a href="/assets/papers/monitoring-racial-bias-traffic-enforcement.pdf">Paper</a></p>
           <!-- <p class="publication-links"><a href="/research/projects/traffic-enforcement-proxies/foundations_of_causal_poster-5.pdf">Poster</a></p> -->
           <details class="abstract">
             <summary>Abstract</summary>
@@ -39,11 +40,12 @@ title: "Publications"
           <p class="publication-authors">Kai R. D. Cooper</p>
           <p class="publication-status">IN PREPARATION</p>
           <p class="publication-authors">Winner: Tom Ten Have Award, ACIC 2026; Best Poster (Methods), Polmeth 2026</p>
+          <p class="publication-links"><a href="/assets/papers/outcome-tests.pdf">Paper</a></p>
           <!-- <p class="publication-links"><a href="/research/projects/traffic-enforcement-proxies/foundations_of_causal_poster-5.pdf">Poster</a></p> -->
-          <!-- <details class="abstract">
+          <details class="abstract">
             <summary>Abstract</summary>
-            <p>IN PREPARATION.</p>
-          </details> -->
+            <p>Outcome tests promise to detect discrimination without requiring analysts to observe all the information on which decisions are based. Their traditional Beckerian motivation pursues this goal by comparing outcomes among individuals at the margin of a decision: those for whom the decision-maker's belief about the likelihood of success lies exactly at the standard that makes her indifferent between acting and not acting. Yet the marginal individual is an elusive target of inference: their identity, the beliefs which trigger a decision, and the standard against which those beliefs are judged are all unobserved. I argue that recovering this margin is both unnecessary and, without strong assumptions, often impossible. Instead, I introduce a new class of identification strategies for discrimination by reimagining the eponymous outcome of the test as a negative control outcome for the discriminatory decision. I motivate and formalize this new intuition by developing the first fully nonparametric causal framework for the outcome test, providing a graphical representation of decision-makers' beliefs and causal definitions of taste-based and statistical discrimination. Viewed through this framework, conventional hit rate comparisons are shown to be limited by an obscure case of collider bias, while approaches targeting marginal outcomes directly require subjective beliefs to be calibrated to objective risk. Leveraging ideas from proximal causal inference, I show that the reimagined test yields sharp bounds on the probability of necessity without an instrumental variable or calibrated beliefs. An application to Washington State Patrol searches illustrates how this approach converts observed hit rates into an interpretable, causal measure of discrimination. I conclude with a discussion of the promise this framework offers for future work.</p>
+          </details>
         </article>
 
         <article id="the-welfare-costs-of-discrimination" class="publication-item">

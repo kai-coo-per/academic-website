@@ -629,6 +629,12 @@ main.page-shell .bio-layout > aside.bio-sidebar {
   line-height: 1.32;
 }
 
+.publication-links a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
+}
+
 .publication-status strong {
   font-family: var(--sans);
   font-size: inherit;
